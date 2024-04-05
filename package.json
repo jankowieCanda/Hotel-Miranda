@@ -1,19 +1,22 @@
 {
-  "name": "lolo_hotel",
+  "name": "hotel_miranda",
   "version": "1.0.0",
-  "description": "web site lolo hotel",
+  "description": "web site hotel miranda",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jankowieCanda/LoLo-Hotel.git"
+    "url": "git+https://github.com/jankowieCanda/Hotel-Miranda.git"
   },
   "author": "Gabriel Jankowiec Canda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jankowieCanda/LoLo-Hotel/issues"
+    "url": "https://github.com/jankowieCanda/Hotel-Miranda/issues"
   },
-  "homepage": "https://github.com/jankowieCanda/LoLo-Hotel#readme"
+  "homepage": "https://github.com/jankowieCanda/Hotel-Miranda#readme",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
 }
