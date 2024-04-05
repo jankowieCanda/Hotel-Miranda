@@ -1,0 +1,19 @@
+{
+  "name": "lolo_hotel",
+  "version": "1.0.0",
+  "description": "web site lolo hotel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jankowieCanda/LoLo-Hotel.git"
+  },
+  "author": "Gabriel Jankowiec Canda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jankowieCanda/LoLo-Hotel/issues"
+  },
+  "homepage": "https://github.com/jankowieCanda/LoLo-Hotel#readme"
+}
