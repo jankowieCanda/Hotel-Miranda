@@ -3,6 +3,7 @@
 @import 'styles/navBar.scss';
 @import 'styles/banner.scss';
 @import 'styles/availabilitySection.scss';
+@import 'styles/aboutUsSection.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -18,6 +19,8 @@ body {
     font-weight: 700;
     margin-right: 10em;
     margin-bottom: $marginBottom;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
 }
 .subtitle {
     font-family: $oldStandardFont;
@@ -42,6 +45,10 @@ body {
 }
 .btn_theme--color {
     background-color: $colorTheme;
+}
+.section {
+    margin-bottom: $marginBottom;
+    padding: $padding;
 }
 
 

@@ -13,6 +13,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .header {
   width: 100%;
   display: inline-block;
@@ -108,6 +111,55 @@
   background-repeat: no-repeat;
 }
 
+.aboutUs {
+  text-align: center;
+}
+.aboutUs__title {
+  color: #777777;
+}
+.aboutUs__txt_justify {
+  text-align: left;
+  font-family: "archivo";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #777777;
+  line-height: 1.5em;
+  padding-bottom: 1.25em;
+}
+.aboutUs__qualities {
+  padding: 2.5em;
+}
+.aboutUs__qualities_pic {
+  width: 100%;
+}
+.aboutUs__qualities_descrip {
+  padding: 1.25em;
+}
+.aboutUs__qualities_descrip-icon {
+  margin-bottom: 1.25em;
+}
+.aboutUs__qualities_descrip-title {
+  margin-bottom: 1.25em;
+  font-family: "old standard tt";
+  font-weight: 400;
+  font-size: 1.875rem;
+  color: #111111;
+  letter-spacing: -0.056em;
+}
+.aboutUs__qualities_descrip-txt {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #111111;
+}
+.aboutUs__qualities_descrip-title--color, .aboutUs__qualities_descrip-txt--color {
+  color: #FFFFFF;
+}
+.aboutUs__qualities_descrip--backgroundColor {
+  background-color: #222222;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -124,6 +176,8 @@ body {
   font-weight: 700;
   margin-right: 10em;
   margin-bottom: 1.25em;
+  letter-spacing: 0.175em;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -151,6 +205,11 @@ body {
 
 .btn_theme--color {
   background-color: #BEAD8E;
+}
+
+.section {
+  margin-bottom: 1.25em;
+  padding: 1.25em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,55 @@
+@use 'sass:math';
+@import './var.scss';
+
+.aboutUs {
+    text-align: center;
+
+    &__title {
+        color: $colorSectionTitle;
+    }
+    &__txt_justify {
+        text-align: left;
+        font-family: $archivoFont;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $colorSectionTitle;
+        line-height: 1.5em;
+        padding-bottom: $paddingBottom;
+    }
+    &__qualities {
+        padding: $padding*2;
+        
+        &_pic {
+            width: 100%;
+        }
+        &_descrip {
+            padding: $padding;
+
+            &-icon {
+                margin-bottom: $marginBottom;
+            }
+            &-title {
+                margin-bottom: $marginBottom;
+                font-family: $oldStandardFont;
+                font-weight: 400;
+                font-size: 1.875rem;
+                color: $colorBlack;
+                letter-spacing: -0.056em;
+            }
+            &-txt {
+                font-family: $robotoFont;
+                font-weight: 400;
+                font-size: 0.875rem;
+                text-align: center;
+                color: $colorBlack;
+            }
+            &-title--color, &-txt--color {
+                color: $whiteColor;
+            }
+        }
+        &_descrip--backgroundColor {
+            background-color: $colorBlack2;
+        }
+    }
+
+}
