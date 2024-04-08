@@ -4,21 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel Miranda</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header class="header">
-            <img src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
-            <img src='../../img/header/logo_H.svg' alt="logo H">
-            <img src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
-            <img src='../../img/header/user_icon.svg' alt="user icon" />
-            <img src='../../img/header/search_btn_icon.svg' alt="search icon" />
+            <img class="header__menu" src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
+            
+            <div class="header__logo">
+                <img class="logo_H" src='../../img/header/logo_H.svg' alt="logo H" />
+                <img class="logo_miranda" src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
+            </div>
+            <img class="icon header__user_icon" src='../../img/header/user_icon.svg' alt="user icon" />
+            <img class="icon header__search_icon" src='../../img/header/search_btn_icon.svg' alt="search icon" />
         </header>
-        <nav id="nav" class="menu">
-            <ul class="menu__list">
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">About Us</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Rooms</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Offers</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Contact</a></li>
+        <nav id="nav" class="navBar">
+            <ul class="navBar__list">
+                <li class="navBar__list-item"><a href="#">About Us</a></li>
+                <li class="navBar__list-item"><a href="#">Rooms</a></li>
+                <li class="navBar__list-item"><a href="#">Offers</a></li>
+                <li class="navBar__list-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
         <footer class="footer">
