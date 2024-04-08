@@ -1,0 +1,21 @@
+@use 'sass:math';
+@import './var.scss';
+
+.banner {
+    background-color: $colorBlack3;
+    padding: 0 $padding;
+    padding-top: $padding*7;
+    padding-bottom: $paddingBottom;
+
+    &__title, &__subtitle {
+        color: $whiteColor;
+    }
+    &__btn {
+        background-color: $colorBlack3;
+        color: $whiteColor;
+    }
+    &__btn_theme--tour {
+        background-color: $tourColorTheme;
+        color: $whiteColor;
+    }
+}

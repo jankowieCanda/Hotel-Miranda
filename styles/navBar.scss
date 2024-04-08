@@ -2,8 +2,10 @@
 
 
 .navBar {
-    padding: $paddingBottom 0;
-    box-shadow: 0 4px 4px $boxShadowColor;
+    display: none;
+    width: 100%;
+    background-color: $whiteColor;
+    margin-top: $margin;
     
     &__list {
         list-style: none;

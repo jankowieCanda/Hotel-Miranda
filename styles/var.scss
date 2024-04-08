@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 $archivoFont: 'archivo';
+$oldStandardFont: 'old standard tt';
 
-$whiteBackgroundColor: #FFFFFF;
+$whiteColor: #FFFFFF;
 $colorBlack: #111111;
+$colorBlack3: #333333;
 $boxShadowColor: #0000004A;
+$tourColorTheme: #BEAD8E;
 
+$padding: 1.25em;
+$margin: 1.25em;
 $paddingBottom: 1.25em;
 $marginBottom: 1.25em;

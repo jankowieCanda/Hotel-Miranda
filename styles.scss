@@ -1,6 +1,7 @@
 @import 'styles/var.scss';
 @import 'styles/header.scss';
 @import 'styles/navBar.scss';
+@import 'styles/banner.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -9,4 +10,29 @@ html, * {
 }
 body { 
     min-width: 320px 
+}
+.title {
+    font-family: $archivoFont;
+    font-size: 0.813rem;
+    font-weight: 700;
+    margin-right: 10em;
+    margin-bottom: $marginBottom;
+}
+.subtitle {
+    font-family: $oldStandardFont;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -0.075em;
+    margin-bottom: $marginBottom;
+}
+.btn {
+    display: block;
+    width: 13.5em;
+    height: 3.75em;
+    font-family: $archivoFont;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: 2px solid #ffffff33;
+    margin-bottom: $marginBottom;
+    cursor: pointer;
 }
