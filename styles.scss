@@ -2,6 +2,7 @@
 @import 'styles/header.scss';
 @import 'styles/navBar.scss';
 @import 'styles/banner.scss';
+@import 'styles/availabilitySection.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -32,7 +33,15 @@ body {
     font-family: $archivoFont;
     font-weight: 700;
     font-size: 0.875rem;
+    color: $whiteColor;
     border: 2px solid #ffffff33;
+    background-color: $colorBlack3;
     margin-bottom: $marginBottom;
     cursor: pointer;
+    text-transform: uppercase;
 }
+.btn_theme--color {
+    background-color: $colorTheme;
+}
+
+

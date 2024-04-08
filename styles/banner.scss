@@ -10,12 +10,4 @@
     &__title, &__subtitle {
         color: $whiteColor;
     }
-    &__btn {
-        background-color: $colorBlack3;
-        color: $whiteColor;
-    }
-    &__btn_theme--tour {
-        background-color: $tourColorTheme;
-        color: $whiteColor;
-    }
 }

@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .header {
   width: 100%;
   display: inline-block;
@@ -70,13 +77,35 @@
 .banner__title, .banner__subtitle {
   color: #FFFFFF;
 }
-.banner__btn {
-  background-color: #333333;
-  color: #FFFFFF;
+
+.availability {
+  background-color: #222222;
+  padding: 1.25em;
 }
-.banner__btn_theme--tour {
-  background-color: #BEAD8E;
+.availability__Form_data label {
+  display: block;
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1rem;
   color: #FFFFFF;
+  margin-bottom: 1.25em;
+}
+.availability__Form_data input {
+  width: 100%;
+  border: none;
+  appearance: none;
+  border-bottom: 2px solid #BEAD8E;
+  background-color: #222222;
+  margin-bottom: 1.25em;
+  text-indent: 2em;
+  line-height: 2em;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.availability__Form_data ::placeholder {
+  background-image: url("../img/calendar_icon.svg");
+  background-repeat: no-repeat;
 }
 
 html, * {
@@ -112,9 +141,16 @@ body {
   font-family: "archivo";
   font-weight: 700;
   font-size: 0.875rem;
+  color: #FFFFFF;
   border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: #333333;
   margin-bottom: 1.25em;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn_theme--color {
+  background-color: #BEAD8E;
 }
 
 /*# sourceMappingURL=styles.css.map */
