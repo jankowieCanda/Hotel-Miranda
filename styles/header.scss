@@ -1,0 +1,33 @@
+@import './var.scss';
+
+.header {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: $paddingBottom;
+    
+    &__menu{
+        margin-top: 1.75em;
+        margin-left: 1.25em;
+    }
+    &__logo {
+        display: inline-block;
+        margin-top: 1.063em;
+        margin-left: 2em;
+
+        .logo_H {
+            box-shadow: 0 14px 24px #8B8B8B40;
+        }
+        .logo_miranda {
+            margin-left: 1.25em;
+        }
+    }
+
+    &__user_icon {
+        margin-top: 1.438em;
+        margin-left: 6.313em;
+    }
+    &__search_icon {
+        margin-top: 1.438em;
+        margin-left: 1.25em;
+    }
+}
