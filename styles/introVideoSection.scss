@@ -1,0 +1,23 @@
+@import './var.scss';
+
+.introVideo {
+    background-color: $colorBlack2;
+    padding: $padding;
+
+    &__title {
+        color: $colorIntroVideo;
+    }
+    &__subtitle {
+        color: $whiteColor;
+    }
+    p {
+        color: $colorIntroVideoP;
+        font-family: $archivoFont;
+        font-weight: 400;
+        font-size: 0.875rem;
+        margin-bottom: $marginBottom;
+    }
+    &__video {
+        margin-bottom: $marginBottom;
+    }
+}

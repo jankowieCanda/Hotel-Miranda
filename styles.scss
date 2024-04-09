@@ -5,6 +5,7 @@
 @import 'styles/availabilitySection.scss';
 @import 'styles/aboutUsSection.scss';
 @import 'styles/roomsSection.scss';
+@import 'styles/introVideoSection.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -45,6 +46,16 @@ body {
 }
 .btn_theme--color {
     background-color: $colorTheme;
+}
+.introVideo__btn--video{
+    position: relative;
+    top: -16.5em;
+    left: 10em;
+    background-color: $whiteColor;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    margin: 0;
 }
 .section {
     margin-bottom: $marginBottom;
