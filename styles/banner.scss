@@ -10,4 +10,8 @@
     &__title, &__subtitle {
         color: $whiteColor;
     }
+    &__title {
+        margin-right: 10em;
+        text-align: left;
+    }
 }

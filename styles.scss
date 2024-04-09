@@ -4,6 +4,7 @@
 @import 'styles/banner.scss';
 @import 'styles/availabilitySection.scss';
 @import 'styles/aboutUsSection.scss';
+@import 'styles/roomsSection.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -11,13 +12,12 @@ html, * {
     padding: 0;
 }
 body { 
-    min-width: 320px 
+    min-width: 320px;
 }
 .title {
     font-family: $archivoFont;
     font-size: 0.813rem;
     font-weight: 700;
-    margin-right: 10em;
     margin-bottom: $marginBottom;
     letter-spacing: 0.175em;
     text-transform: uppercase;
@@ -48,7 +48,30 @@ body {
 }
 .section {
     margin-bottom: $marginBottom;
-    padding: $padding;
 }
-
+.header {
+    z-index: 2;
+}
+.swiper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
+    &-button-prev, &-button-next {
+        width: 2em;
+        height: 2em;
+        top: 35%;
+        color: $colorBlack;
+        background-color: $whiteColor;
+        --swiper-navigation-size: 25%;
+    }
+    &-button-prev:hover, &-button-next:hover {
+        color: $whiteColor;
+        background-color: $colorTheme;
+    }
+}
+.pricepernight {
+    font-family: $archivoFont;
+    font-weight: 700;  
+}
 

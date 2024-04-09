@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel Miranda</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css"/>
+        
     </head>
     <body>
         <header class="header">
@@ -65,6 +67,39 @@
                     <h3 class="aboutUs__qualities_descrip-title aboutUs__qualities_descrip-title--color">Luxury Room</h3>
                     <p class="aboutUs__qualities_descrip-txt aboutUs__qualities_descrip-txt--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
+            </div>
+        </section>
+        <section class="section rooms">
+            <h1 class="title rooms__title">Rooms</h1>
+            <h2 class="subtitle rooms__subtitle">Hand Picked Rooms</h2>
+            <div class="swiper rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/automobile_icon.png" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="../../img/imgRelleno.png" alt="">
+                        <div class="rooms__description">
+                            <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <p class="pricepernight">$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
+                </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
             </div>
         </section>
         <footer class="footer">
@@ -131,5 +166,6 @@
                 </div>
             </section>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
 </html>
