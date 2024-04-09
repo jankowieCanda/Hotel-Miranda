@@ -25,6 +25,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .header {
   width: 100%;
   display: inline-block;
@@ -282,6 +285,50 @@
   font-size: 0.875rem;
   color: #777777;
   margin-bottom: 1.25em;
+}
+
+.ourFood {
+  text-align: left;
+  margin-left: 1.25em;
+}
+.ourFood #donut {
+  position: relative;
+  right: -75%;
+}
+.ourFood__title {
+  color: #777777;
+}
+.ourFood__subtitle {
+  margin-right: 2.5em;
+}
+.ourFood__descrip_item .imgBox {
+  width: 30%;
+  display: inline-block;
+}
+.ourFood__descrip_item .imgBox img {
+  width: 100%;
+}
+.ourFood__descrip_item .plates {
+  position: relative;
+  top: -1em;
+  display: inline-block;
+  width: 60%;
+  margin-left: 1.5em;
+}
+.ourFood__descrip_item .plates__title {
+  font-family: "old standard tt";
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: -0.045em;
+  color: #222222;
+  margin-bottom: 0.5em;
+}
+.ourFood__descrip_item .plates p {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  margin-right: 1.5em;
 }
 
 html, * {

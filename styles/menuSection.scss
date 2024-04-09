@@ -1,0 +1,52 @@
+@use 'sass:math';
+@import './var.scss';
+
+.ourFood {
+    text-align: left;
+    margin-left: $margin;
+
+    #donut {
+        position: relative;
+        right: -75%;
+    }
+    &__title {
+        color: $colorSectionTitle;
+    }
+    &__subtitle {
+        margin-right: 2.5em;
+    }
+    &__descrip_item {
+        
+        .imgBox {
+            width: 30%;
+            display: inline-block;
+
+            img{
+                width: 100%;
+            }
+        }
+        .plates {
+            position: relative;
+            top: -1em;
+            display: inline-block;
+            width: 60%;
+            margin-left: 1.5em;
+
+            &__title {
+                font-family: $oldStandardFont;
+                font-weight: 400;
+                font-size: 1.5em;
+                letter-spacing: -0.045em;
+                color: $colorBlack2;
+                margin-bottom: math.div($marginBottom, 2.5);
+            }
+            p {
+                font-family: $robotoFont;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.5em;
+                margin-right: 1.5em;
+            }
+        }
+    }
+}
