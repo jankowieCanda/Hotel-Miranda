@@ -6,7 +6,6 @@
         <title>Hotel Miranda</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles.css"/>
-        
     </head>
     <body>
         <header class="header">
@@ -79,7 +78,7 @@
                             <ul class="rooms__services_list">
                                 <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
                                 <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/automobile_icon.png" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
                                 <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
                                 <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
                                 <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
@@ -117,52 +116,111 @@
         <section class="section facilities">
             <h1 class="title facilities__title">Facilities</h1>
             <h2 class="subtitle facilities__subtitle">Core Features</h2>
-            <div class="facilities__descrip">
-                <img src="./img/high_rating_icon.svg" alt="high rating icon"/>
-                <h3 class="facilities__descrip_title">Have High Rating</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-            </div>
+            <div class="swiper facilitiesSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="facilities__descrip">
+                            <img src="./img/high_rating_icon.svg" alt="high rating icon"/>
+                            <h3 class="facilities__descrip_title">Have High Rating</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </section>
         <section class="section ourFood">
             <img id="donut" src="./img/donut_icon.svg" alt="donut icon">
             <h1 class="title ourFood__title">Menu</h1>
             <h2 class="subtitle ourFood__subtitle">Our Foods Menu</h2>
-            <div class="ourFood__descrip">
-                <div class="ourFood__descrip_item">
-                    <div class="imgBox">
-                        <img src="./img/imgRelleno.png" alt="">
-                    </div>
-                    <div class="plates">
-                        <h3 class="plates__title">Eggs & Bacon</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
+            <div class="swiper ourFoodSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="ourFood__descrip">
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Eggs & Bacon</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Tea or Coffee</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Chia Oatmeal</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
                 </div>
-                <div class="ourFood__descrip_item">
-                    <div class="imgBox">
-                        <img src="./img/imgRelleno.png" alt="">
-                    </div>
-                    <div class="plates">
-                        <h3 class="plates__title">Tea or Coffee</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-                <div class="ourFood__descrip_item">
-                    <div class="imgBox">
-                        <img src="./img/imgRelleno.png" alt="">
-                    </div>
-                    <div class="plates">
-                        <h3 class="plates__title">Chia Oatmeal</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
+                <div class="swiper-button-next swiper-button-next--position"></div>
+                <div class="swiper-button-prev swiper-button-prev--position"></div>
+            </div>
+        </section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img id="imagen" src="./img/imgRelleno.png" alt=""></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="section data">
+            <div class="data__item">
+                <img src="./img/rocket_icon.png" alt="">
+                <h1>84k<span class="plus">+</span></h1>
+                <p><span class="span">Projects are Completed</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/backers_icon.png" alt="">
+                <h1>10M<span class="plus">+</span></h1>
+                <p><span class="span">Active Backers Around World</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/categories_icon.png" alt="">
+                <h1>02k<span class="plus">+</span></h1>
+                <p><span class="span">Categories Served</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/idea_icon.png" alt="">
+                <h1>100M<span class="plus">+</span></h1>
+                <p><span class="span">Idea Raised Funds</span></p>
             </div>
         </section>
         <footer class="footer">
@@ -229,6 +287,7 @@
                 </div>
             </section>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>   
 </html>

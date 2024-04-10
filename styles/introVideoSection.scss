@@ -19,5 +19,9 @@
     }
     &__video {
         margin-bottom: $marginBottom;
+
+        #videoRelleno {
+            width: 100%;
+        }
     }
 }

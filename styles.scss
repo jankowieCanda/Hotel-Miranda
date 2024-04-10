@@ -8,6 +8,7 @@
 @import 'styles/introVideoSection.scss';
 @import 'styles/facilitiesSection.scss';
 @import 'styles/menuSection.scss';
+@import 'styles/dataSection.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -86,5 +87,13 @@ body {
 .pricepernight {
     font-family: $archivoFont;
     font-weight: 700;  
+}
+.mySwiper {
+    width: 90%;
+    margin: 0 auto $marginBottom;
+    
+    #imagen {
+        width: 100%;
+    }
 }
 

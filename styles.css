@@ -28,6 +28,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .header {
   width: 100%;
   display: inline-block;
@@ -256,6 +259,9 @@
 .introVideo__video {
   margin-bottom: 1.25em;
 }
+.introVideo__video #videoRelleno {
+  width: 100%;
+}
 
 .facilities {
   padding: 1.25em;
@@ -329,6 +335,34 @@
   font-size: 0.875rem;
   line-height: 1.5em;
   margin-right: 1.5em;
+}
+
+.data {
+  background-color: #222222;
+  padding: 1.25em;
+  text-align: center;
+}
+.data__item {
+  margin: 0 auto 1.25em;
+}
+.data__item h1 {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: #FFFFFF;
+}
+.data__item h1 .plus {
+  font-size: 1rem;
+}
+.data__item p {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1rem;
+}
+.data__item p .span {
+  font-size: 1rem;
+  color: #999999;
+  line-height: 1.364em;
 }
 
 html, * {
@@ -417,6 +451,14 @@ body {
 .pricepernight {
   font-family: "archivo";
   font-weight: 700;
+}
+
+.mySwiper {
+  width: 90%;
+  margin: 0 auto 1.25em;
+}
+.mySwiper #imagen {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
