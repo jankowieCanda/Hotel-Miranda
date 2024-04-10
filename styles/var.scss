@@ -1,3 +1,23 @@
-$whiteBackgroundColor: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$archivoFont: 'archivo';
+$oldStandardFont: 'old standard tt';
+$robotoFont: 'roboto';
+
+$whiteColor: #FFFFFF;
+$colorBlack: #111111;
+$colorBlack2: #222222;
+$colorBlack3: #333333;
+$colorGrey: #999999;
+$boxShadowColor: #0000004A;
+$colorTheme: #BEAD8E;
+$colorSectionTitle: #777777;
+$colorIntroVideo: #BDAC8D;
+$colorIntroVideoP: #C2C2C2;
+
+$padding: 1.25em;
+$margin: 1.25em;
 $paddingBottom: 1.25em;
+$marginBottom: 1.25em;

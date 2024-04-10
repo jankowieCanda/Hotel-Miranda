@@ -4,30 +4,232 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel Miranda</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
         <header class="header">
-            <img src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
-            <img src='../../img/header/logo_H.svg' alt="logo H">
-            <img src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
-            <img src='../../img/header/user_icon.svg' alt="user icon" />
-            <img src='../../img/header/search_btn_icon.svg' alt="search icon" />
+            <img class="header__menu" src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
+            <div class="header__logo">
+                <img class="logo_H" src='../../img/header/logo_H.svg' alt="logo H" />
+                <img class="logo_miranda" src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
+            </div>
+            <img class="icon header__user_icon" src='../../img/header/user_icon.svg' alt="user icon" />
+            <img class="icon header__search_icon" src='../../img/header/search_btn_icon.svg' alt="search icon" />
+            <nav id="nav" class="navBar">
+                <ul class="navBar__list">
+                    <li class="navBar__list-item"><a href="#">About Us</a></li>
+                    <li class="navBar__list-item"><a href="#">Rooms</a></li>
+                    <li class="navBar__list-item"><a href="#">Offers</a></li>
+                    <li class="navBar__list-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav id="nav" class="menu">
-            <ul class="menu__list">
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">About Us</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Rooms</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Offers</a></li>
-                <li class="menu__list_item"><a class="menu__list_item-link" href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="banner">
+            <h1 class="title banner__title">THE ULTIMATE LUXURY EXPERIENCE</h1>
+            <h2 class="subtitle banner__subtitle">The Perfect Base For You</h2>
+            <button class="btn btn_theme--color banner__btn">TAKE A TOUR</button>
+            <button class="btn banner__btn">LEARN MORE</button>
+        </div>
+        <section class="section availability">
+            <form action="" class="availability__Form">
+                <div class="availability__Form_data">
+                    <label for="arrivalDate">Arrival Date</label>
+                    <input id="arrivalDate" name="arrivalDate" type="text" placeholder="24th march 2020">
+                </div>
+                <div class="availability__Form_data">
+                    <label for="departureDate">Departure Date</label>
+                    <input id="departureDate" name="departureDate" type="text" placeholder="30th march 2020">
+                </div>
+                <button class="btn btn_theme--color availability__btn">Check availability</button>
+            </form>
+        </section>
+        <section class="section aboutUs">
+            <h1 class="title aboutUs__title">About Us</h1>
+            <h2 class="subtitle aboutUs__subtitle">Discover Our Underground.</h2>
+            <p class="txt aboutUs__txt_justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="btn btn_theme--color aboutUs__btn">Book Now</button>
+            <div class="aboutUs__qualities aboutUs__qualities_strongTeam">
+                <img class="aboutUs__qualities_pic" src="./img/imgRelleno.png" alt="">
+                <div class="aboutUs__qualities_descrip">
+                    <img class="aboutUs__qualities_descrip-icon" src="./img/strongTeam_icon.svg" alt="strong team icon">
+                    <h3 class="aboutUs__qualities_descrip-title">Strong Team</h3>
+                    <p class="aboutUs__qualities_descrip-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+            <div class="aboutUs__qualities aboutUs__qualities_luxuryRoom">
+                <img class="aboutUs__qualities_pic" src="./img/imgRelleno.png" alt="">
+                <div class="aboutUs__qualities_descrip aboutUs__qualities_descrip--backgroundColor">
+                    <img class="aboutUs__qualities_descrip-icon" src="../../img/luxuryRoom_icon.svg" alt="luxury room icon">
+                    <h3 class="aboutUs__qualities_descrip-title aboutUs__qualities_descrip-title--color">Luxury Room</h3>
+                    <p class="aboutUs__qualities_descrip-txt aboutUs__qualities_descrip-txt--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section rooms">
+            <h1 class="title rooms__title">Rooms</h1>
+            <h2 class="subtitle rooms__subtitle">Hand Picked Rooms</h2>
+            <div class="swiper rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="../../img/imgRelleno.png" alt="">
+                        <div class="rooms__description">
+                            <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <p class="pricepernight">$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
+                </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section introVideo">
+            <h1 class="title introVideo__title">Intro video</h1>
+            <h2 class="subtitle introVideo__subtitle">Meet With Our Luxury Place.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
+            </p>
+            <picture class="introVideo__video">
+                <img id="videoRelleno" src="./img/imgRelleno.png" alt=""/>
+                <button class="btn introVideo__btn introVideo__btn--video"><img src="./img/play_video_icon.svg" alt="playvideo icon"></button>
+            </picture>
+            <button class="btn btn_theme--color introVideo__btn">Book Now</button>
+        </section>
+        <section class="section facilities">
+            <h1 class="title facilities__title">Facilities</h1>
+            <h2 class="subtitle facilities__subtitle">Core Features</h2>
+            <div class="swiper facilitiesSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="facilities__descrip">
+                            <img src="./img/high_rating_icon.svg" alt="high rating icon"/>
+                            <h3 class="facilities__descrip_title">Have High Rating</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="section ourFood">
+            <img id="donut" src="./img/donut_icon.svg" alt="donut icon">
+            <h1 class="title ourFood__title">Menu</h1>
+            <h2 class="subtitle ourFood__subtitle">Our Foods Menu</h2>
+            <div class="swiper ourFoodSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="ourFood__descrip">
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Eggs & Bacon</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Tea or Coffee</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ourFood__descrip_item">
+                            <div class="imgBox">
+                                <img src="./img/imgRelleno.png" alt="">
+                            </div>
+                            <div class="plates">
+                                <h3 class="plates__title">Chia Oatmeal</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next swiper-button-next--position"></div>
+                <div class="swiper-button-prev swiper-button-prev--position"></div>
+            </div>
+        </section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img id="imagen" src="./img/imgRelleno.png" alt=""></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="section data">
+            <div class="data__item">
+                <img src="./img/rocket_icon.png" alt="">
+                <h1>84k<span class="plus">+</span></h1>
+                <p><span class="span">Projects are Completed</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/backers_icon.png" alt="">
+                <h1>10M<span class="plus">+</span></h1>
+                <p><span class="span">Active Backers Around World</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/categories_icon.png" alt="">
+                <h1>02k<span class="plus">+</span></h1>
+                <p><span class="span">Categories Served</span></p>
+            </div>
+            <div class="data__item">
+                <img src="./img/idea_icon.png" alt="">
+                <h1>100M<span class="plus">+</span></h1>
+                <p><span class="span">Idea Raised Funds</span></p>
+            </div>
+        </section>
         <footer class="footer">
             <div class="footer__logo">
-                <div class="footer__logo_box-H">
-                    <p class="logo-H">H</p>
+                <div class="footer__logo_box footer__logo_box-H">
+                    <p class="logo logo-H">H</p>
                 </div>
-                <div class="footer__logo_box-Miranda">
-                    <h2 class="logo-Miranda">Hotel <span class="logo-Miranda__span">Miranda</span></h2>
+                <div class="footer__logo_box footer__logo_box-Miranda">
+                    <p class="logo logo-Miranda">Hotel <span>Miranda</span></p>
                 </div>
             </div>
             <div class="footer__desc-txt">
@@ -36,54 +238,57 @@
                 </p>
             </div>
             <div class="footer__socials">
-                <a href="#"><img src="../../img/footer/facebook_icon.svg" alt="facebook icon" /></a>
-                <a href="#"><img src="../../img/footer/twitter_icon.svg" alt="twitter icon" /></a>
-                <a href="#"><img src="../../img/footer/behance_icon.svg" alt="behance icon" /></a>
-                <a href="#"><img src="../../img/footer/linkedin_icon.svg" alt="linkedin icon" /></a>
-                <a href="#"><img src="../../img/footer/youtube_icon.svg" alt="youtube icon" /></a>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/facebook_icon.svg" alt="facebook icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/twitter_icon.svg" alt="twitter icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/behance_icon.svg" alt="behance icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/linkedin_icon.svg" alt="linkedin icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/youtube_icon.svg" alt="youtube icon" />
+                </div>
             </div>
-            <section class="footer__section footer__section-services">
-                <h3 class="footer__section_title ">Services.</h3>
-                <ul class="footer__section_services-list">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                </ul>
+            <section class="section footer__section footer__section-services">
+                <h3 class="footer__section_title subtitle">Services.</h3>
+                <ul id="services_list" class="footer__section_services-list"></ul>
             </section>
-            <section class="footer__section footer__section-contact">
-                <h3 class="footer__section_title ">Contact Us.</h3>
-                <div class="footer__section-contact_phone">
+            <section class="section footer__section footer__section_contact">
+                <h3 class="footer__section_title subtitle">Contact Us.</h3>
+                <div class="footer__section_contact-data">
                     <img src="../../img/footer/phone_icon.svg" alt="phone icon" />
-                    <h4>Phone Number</h4>
-                    <p><span>+987 876 765 76 577</span></p>
+                    <h4 class="subtitle">Phone Number <span>+987 876 765 76 577</span></h4>
+                    
                 </div>
-                <div class="footer__section-contact_mail">
+                <div class="footer__section_contact-data">
                     <img src="../../img/footer/mail_icon.svg" alt="mail icon" />
-                    <h4>Email</h4>
-                    <p><span>info@email.com</span></p>
+                    <h4 class="subtitle">Email <span>info@email.com</span></h4>
                 </div>
-                <div class="footer__section-contact_location">
+                <div class="footer__section_contact-data">
                     <img src="../../img/footer/location_icon.svg" alt="location icon" />
-                    <h4>Location</h4>
-                    <p><span>sarasa</span></p>
+                    <h4 class="subtitle">Location <span>sarasa</span></h4>
                 </div>
             </section>
-            <section class="footer__section footer__section-copyright">
-                <div class="footer__section-copyright_by">
+            <section class="section footer__section footer__section_copyright">
+                <div class="footer__section_copyright-by">
                     <p>Copyright By@Example - 2024</p>
                 </div>
-                <div class="footer__section-copyright_terms&policy">
-                    <a href="#">Terms of use</a>
-                    <a href="#">Privacy Environmental Policy</a>
+                <div class="footer__section_copyright-terms&policy">
+                    <ul>
+                        <li>Terms of use</li>
+                        <li>|</li>
+                        <li>Privacy Environmental Policy</li>
+                    </ul>
                 </div>
             </section>
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/services_list.js"></script> 
 </html>

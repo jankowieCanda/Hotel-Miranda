@@ -3,6 +3,10 @@
 .header {
     width: 100%;
     display: inline-block;
+    box-shadow: 0 3px 6px $boxShadowColor;
+    position: fixed;
+    top: 0;
+    background-color: $whiteColor;
     padding-bottom: $paddingBottom;
     
     &__menu{

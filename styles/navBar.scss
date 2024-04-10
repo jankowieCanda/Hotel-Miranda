@@ -1,0 +1,26 @@
+@import './var.scss';
+
+
+.navBar {
+    display: none;
+    width: 100%;
+    background-color: $whiteColor;
+    margin-top: $margin;
+    
+    &__list {
+        list-style: none;
+        margin-left: 1.313em;
+
+        &-item {
+            margin-bottom: $marginBottom;
+        }
+        a {
+            font-family: $archivoFont;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            color: $colorBlack;
+            cursor: pointer;
+        }
+    }
+}

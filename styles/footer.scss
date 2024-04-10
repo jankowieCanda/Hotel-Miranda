@@ -1,0 +1,130 @@
+@use 'sass:math';
+@import './var.scss';
+
+.footer {
+    padding: $padding;
+    text-align: left;
+    
+    &__logo {
+        margin-bottom: $marginBottom*2;
+
+        &_box {
+            display: inline-block;
+            width: 5em;
+            height: 5em;
+        }
+        &_box-H {
+            background-color: $colorTheme;
+            text-align: center;
+            padding-top: 1em;
+            
+        }
+        &_box-Miranda {
+            position: relative;
+            top: 0.8em;
+            left: 1em;
+        }
+        .logo {
+            font-family: $archivoFont;
+            font-weight: 700;
+            font-size: 2.5em;
+            color: $whiteColor;
+        }
+        .logo-Miranda {
+            font-size: 1.625rem;
+            color: $colorBlack;
+            text-transform: uppercase;
+            letter-spacing: 0.163em;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+    }
+    &__desc-txt_paragraph {
+        font-family: $archivoFont;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $colorSectionTitle;
+        margin-bottom: $marginBottom;
+        line-height: 1.625em;
+    }
+    &__socials {
+        margin-bottom: $marginBottom;
+
+        &_iconBox {
+            display: inline-block;
+            width: 2.5em;
+            height: 2.5em;
+            margin-right: 0.5em;
+            text-align: center;
+            padding: 0.5em;
+
+            &:hover {
+                background-color: $colorTheme;
+            }
+        }
+    }
+    .footer__section {
+
+        &_title {
+            font-size: 1.5rem;
+        }
+        &_services-list {
+            list-style: '+';
+            font-family: $robotoFont;
+            font-weight: 400;
+            font-size: 1rem;
+            color: $colorSectionTitle;
+            columns: 9em 2;
+            column-fill: auto;
+            padding-left: math.div($padding, 2);
+            max-height: 20em;
+            line-height: 3em;
+            
+            li {
+                padding-left: 0.3em;
+            }
+                      
+        }
+        &_contact-data {
+            
+            h4 {
+                display: inline-block;
+                font-size: 1.25rem;
+                color: $colorBlack2;
+                margin-left: 1em;
+
+
+                span {
+                    display: block;
+                    font-family: $robotoFont;
+                    font-size: 0.875rem;
+                    color: $colorSectionTitle;
+                }
+            }
+        }
+        &_copyright {
+
+            p, ul {
+                font-family: $robotoFont;
+                font-weight: 700;
+                font-size: 1rem;
+                letter-spacing: -0.03em;
+                margin-bottom: $marginBottom;
+            }
+            ul {
+                list-style: none;
+                column-rule: 1px solid;
+                height: 1.172em;
+
+                li {
+                    display: inline-block;
+                    color: $colorBlack2;
+                    margin: 0 0.2em;
+                }
+            }
+        }
+    }
+}

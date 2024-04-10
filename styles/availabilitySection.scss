@@ -1,0 +1,37 @@
+@import './var.scss';
+
+.availability {
+    background-color: $colorBlack2;
+    padding: $padding;
+    &__Form {
+
+        &_data {
+
+            label {
+                display: block;
+                font-family: $robotoFont;
+                font-weight: 700;
+                font-size: 1rem;
+                color: $whiteColor;
+                margin-bottom: $marginBottom;
+            }
+            input {
+                width: 100%;
+                border: none;
+                appearance: none;
+                border-bottom: 2px solid $colorTheme;
+                background-color: $colorBlack2;
+                margin-bottom: $marginBottom;
+                text-indent: 2em;
+                line-height: 2em;
+                font-family: $robotoFont;
+                font-weight: 400;
+                font-size: 0.875rem;
+            }
+            ::placeholder {
+                background-image: url('../img/calendar_icon.svg');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

@@ -1,5 +1,15 @@
 @import 'styles/var.scss';
 @import 'styles/header.scss';
+@import 'styles/navBar.scss';
+@import 'styles/banner.scss';
+@import 'styles/availabilitySection.scss';
+@import 'styles/aboutUsSection.scss';
+@import 'styles/roomsSection.scss';
+@import 'styles/introVideoSection.scss';
+@import 'styles/facilitiesSection.scss';
+@import 'styles/menuSection.scss';
+@import 'styles/dataSection.scss';
+@import 'styles/footer.scss';
 
 html, * { 
     box-sizing: border-box;
@@ -7,5 +17,84 @@ html, * {
     padding: 0;
 }
 body { 
-    min-width: 320px 
+    min-width: 320px;
 }
+.title {
+    font-family: $archivoFont;
+    font-size: 0.813rem;
+    font-weight: 700;
+    margin-bottom: $marginBottom;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-family: $oldStandardFont;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: -0.075em;
+    margin-bottom: $marginBottom;
+}
+.btn {
+    display: block;
+    width: 13.5em;
+    height: 3.75em;
+    font-family: $archivoFont;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: $whiteColor;
+    border: 2px solid #ffffff33;
+    background-color: $colorBlack3;
+    margin-bottom: $marginBottom;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn_theme--color {
+    background-color: $colorTheme;
+}
+.introVideo__btn--video{
+    position: relative;
+    top: -16.5em;
+    left: 10em;
+    background-color: $whiteColor;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    margin: 0;
+}
+.section {
+    margin-bottom: $marginBottom;
+}
+.header {
+    z-index: 2;
+}
+.swiper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
+    &-button-prev, &-button-next {
+        width: 2em;
+        height: 2em;
+        top: 35%;
+        color: $colorBlack;
+        background-color: $whiteColor;
+        --swiper-navigation-size: 25%;
+    }
+    &-button-prev:hover, &-button-next:hover {
+        color: $whiteColor;
+        background-color: $colorTheme;
+    }
+}
+.pricepernight {
+    font-family: $archivoFont;
+    font-weight: 700;  
+}
+.mySwiper {
+    width: 90%;
+    margin: 0 auto $marginBottom;
+    
+    #imagen {
+        width: 100%;
+    }
+}
+

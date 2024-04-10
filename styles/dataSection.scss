@@ -1,0 +1,36 @@
+@import './var.scss';
+
+.data {
+    background-color: $colorBlack2;
+    padding: $padding;
+    text-align: center;
+
+    &__item {
+        margin: 0 auto $marginBottom;
+
+        h1 {
+            font-family: $robotoFont;
+            font-weight: 700;
+            font-size: 3.75rem;
+            color: $whiteColor;
+
+            .plus {
+                font-size: 1rem;
+            }
+        }
+        p {
+            font-family: $robotoFont;
+            font-weight: 700;
+            font-size: 1rem;
+
+            .span {
+                font-size: 1rem;
+                color: $colorGrey;
+                line-height: 1.364em;
+            }
+        }
+        
+    }
+
+    
+}
