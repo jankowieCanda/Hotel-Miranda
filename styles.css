@@ -436,11 +436,14 @@
   font-weight: 400;
   font-size: 1rem;
   color: #777777;
-  columns: 2;
+  columns: 9em 2;
   column-fill: auto;
-  padding: 0.625em;
+  padding-left: 0.625em;
   max-height: 20em;
   line-height: 3em;
+}
+.footer .footer__section_services-list li {
+  padding-left: 0.3em;
 }
 .footer .footer__section_contact-data h4 {
   display: inline-block;

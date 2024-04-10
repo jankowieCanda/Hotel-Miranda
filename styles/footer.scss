@@ -77,11 +77,16 @@
             font-weight: 400;
             font-size: 1rem;
             color: $colorSectionTitle;
-            columns: 2;
+            columns: 9em 2;
             column-fill: auto;
-            padding: math.div($padding, 2);
+            padding-left: math.div($padding, 2);
             max-height: 20em;
             line-height: 3em;
+            
+            li {
+                padding-left: 0.3em;
+            }
+                      
         }
         &_contact-data {
             
