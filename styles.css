@@ -31,6 +31,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .header {
   width: 100%;
   display: inline-block;
@@ -363,6 +366,110 @@
   font-size: 1rem;
   color: #999999;
   line-height: 1.364em;
+}
+
+.footer {
+  padding: 1.25em;
+  text-align: left;
+}
+.footer__logo {
+  margin-bottom: 2.5em;
+}
+.footer__logo_box {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+}
+.footer__logo_box-H {
+  background-color: #BEAD8E;
+  text-align: center;
+  padding-top: 1em;
+}
+.footer__logo_box-Miranda {
+  position: relative;
+  top: 0.8em;
+  left: 1em;
+}
+.footer__logo .logo {
+  font-family: "archivo";
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #FFFFFF;
+}
+.footer__logo .logo-Miranda {
+  font-size: 1.625rem;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 0.163em;
+}
+.footer__logo .logo-Miranda span {
+  font-weight: 400;
+}
+.footer__desc-txt_paragraph {
+  font-family: "archivo";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 1.25em;
+  line-height: 1.625em;
+}
+.footer__socials {
+  margin-bottom: 1.25em;
+}
+.footer__socials_iconBox {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.5em;
+  text-align: center;
+  padding: 0.5em;
+}
+.footer__socials_iconBox:hover {
+  background-color: #BEAD8E;
+}
+.footer .footer__section_title {
+  font-size: 1.5rem;
+}
+.footer .footer__section_services-list {
+  list-style: "+";
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #777777;
+  columns: 2;
+  column-fill: auto;
+  padding: 0.625em;
+  max-height: 20em;
+  line-height: 3em;
+}
+.footer .footer__section_contact-data h4 {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: #222222;
+  margin-left: 1em;
+}
+.footer .footer__section_contact-data h4 span {
+  display: block;
+  font-family: "roboto";
+  font-size: 0.875rem;
+  color: #777777;
+}
+.footer .footer__section_copyright p, .footer .footer__section_copyright ul {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25em;
+}
+.footer .footer__section_copyright ul {
+  list-style: none;
+  column-rule: 1px solid;
+  height: 1.172em;
+}
+.footer .footer__section_copyright ul li {
+  display: inline-block;
+  color: #222222;
+  margin: 0 0.2em;
 }
 
 html, * {
