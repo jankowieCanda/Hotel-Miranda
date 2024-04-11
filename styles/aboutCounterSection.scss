@@ -1,0 +1,27 @@
+@use 'sass:math';
+@import './var.scss';
+
+.counter {
+
+    &__subtitle {
+        margin-right: 2em;
+    }
+    &__item {
+        margin-bottom: $marginBottom*2;
+
+        img {
+            margin-bottom: 1em;
+        }
+        .arrow {
+            margin-bottom: 1.5em;
+        }
+        &_box {
+            width: 10em;
+            display: inline-block;
+            text-align: left;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+    }
+}

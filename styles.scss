@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'styles/var.scss';
 @import 'styles/header.scss';
 @import 'styles/navBar.scss';
@@ -11,7 +12,13 @@
 @import 'styles/dataSection.scss';
 @import 'styles/footer.scss';
 @import 'styles/principal.scss';
-
+@import 'styles/videoBox.scss';
+@import 'styles/aboutServSection.scss';
+@import 'styles/aboutRestoSection.scss';
+@import 'styles/aboutFacilities.scss';
+@import 'styles/aboutCounterSection.scss';
+@import 'styles/aboutSwiper.scss';
+ 
 html, * { 
     box-sizing: border-box;
     margin: 0; 
@@ -27,13 +34,49 @@ body {
     margin-bottom: $marginBottom;
     letter-spacing: 0.175em;
     text-transform: uppercase;
+    color: $colorSectionTitle;
+
+    &--color-white {
+        color: $whiteColor;
+    }
 }
 .subtitle {
     font-family: $oldStandardFont;
-    font-size: 3.5rem;
+    font-size: 3.5rem;/* 56px */
     font-weight: 400;
     letter-spacing: -0.075em;
     margin-bottom: $marginBottom;
+    color: $colorBlack2;
+
+    &--color-white {
+        color: $whiteColor;
+    }
+    &--font-size {
+        font-size: 1.875rem;/* 30px */
+    }
+    &--font-size-xl {
+        font-size: 3.75rem;/* 60px */
+        margin-bottom: 0;
+    }  
+}
+.txt {
+    font-family: $archivoFont;
+    font-weight: 400;
+    font-size: 0.875rem;/* 14px */
+    color: $colorSectionTitle;
+    margin-bottom: $marginBottom;
+
+    &--color-white {
+        color: $whiteColor;
+    }
+}
+.span--roboto {
+    font-family: $robotoFont;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $colorSectionTitle;
+    display: block;
+    letter-spacing: 0;
 }
 .btn {
     display: block;
@@ -63,6 +106,7 @@ body {
     margin: 0;
 }
 .section {
+    padding: $padding;
     margin-bottom: $marginBottom;
 }
 .header {
@@ -85,17 +129,20 @@ body {
         color: $whiteColor;
         background-color: $colorTheme;
     }
+    &-pagination {
+        position: relative;
+        bottom: 0;
+        margin-bottom: $marginBottom;
+        
+        &-bullet-active {
+            background-color: $colorTheme;
+        }
+    }
 }
 .pricepernight {
     font-family: $archivoFont;
     font-weight: 700;  
 }
-.mySwiper {
-    width: 90%;
-    margin: 0 auto $marginBottom;
-    
-    #imagen {
-        width: 100%;
-    }
-}
+
+
 

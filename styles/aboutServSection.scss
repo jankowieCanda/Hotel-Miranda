@@ -1,0 +1,19 @@
+@import './var.scss';
+
+.about__services {
+    
+    &_items {
+
+        div {
+            display: inline-block;
+            width: 9.875em;
+            height: 9.875em;
+            text-align: center;
+            padding: 2.5em 0;
+
+            img {
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+}

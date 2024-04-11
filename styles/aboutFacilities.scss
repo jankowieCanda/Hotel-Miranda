@@ -1,0 +1,22 @@
+@use 'sass:math';
+@import './var.scss';
+
+.facilities {
+
+    &--backgroundColor-black {
+        background-color: $colorBlack2;
+    }
+    &__descrip {
+        width: 100%;
+        margin: 0 auto $marginBottom;
+        padding: $padding*4 $padding $padding*2;
+
+        &--backgroundColor-grey {
+            background-color: $colorGrey_29;
+        }
+        
+    }
+}
+.about__facilities_title {
+    margin-top: $margin*2;
+}

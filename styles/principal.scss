@@ -1,5 +1,46 @@
+@use 'sass:math';
 @import './var.scss';
 
 .principal {
-    
+    background-color: $colorBlack3;
+    padding: 8em $padding 2em;
+    position: relative;
+
+    &__goBack {
+        position: absolute;
+        top: 17.7em;
+        right: 3em;
+        background-color: $whiteColor;
+        width: 9.75em;
+        height: 3.063em;
+        padding-top: 1em;
+        text-align: center;
+
+        ul {
+            columns: 4em 2;
+            max-height: 1em;
+            column-rule: 3px solid $colorBlack2;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    font-family: $archivoFont;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    letter-spacing: -0.03em;
+                    color: $colorBlack2;
+                }
+                .activeLink {
+                    color: $colorTheme;
+                }
+
+            }
+        }
+    }
 }
+
+
+

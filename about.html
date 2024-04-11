@@ -25,62 +25,67 @@
                 </ul>
             </nav>
         </header>
-        <div class="principal aboutUs__principal">
-            <h1 class="title aboutUs__principal_title">THE ULTIMATE LUXURY</h1>
-            <h2 class="subtitle aboutUs__principal_subtitle">About Us</h2>
+        <div class="principal">
+            <h1 class="title title--color-white">THE ULTIMATE LUXURY</h1>
+            <h2 class="subtitle subtitle--color-white">About Us</h2>
             <div class="principal__goBack">
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="aboutUs.html">about</a></li>
+                    <li><a class="activeLink" href="aboutUs.html">about</a></li>
                 </ul>
             </div>
         </div>
-        <div>
-            <picture class="introVideo__video">
-                <img id="videoRelleno" src="./img/imgRelleno.png" alt=""/>
-                <button class="btn introVideo__btn introVideo__btn--video"><img src="./img/play_video_icon.svg" alt="playvideo icon"></button>
-            </picture>
-            <p>
+        <div class="videoBox">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?si=-8rwBmlgtqk7LU3v&amp;clip=UgkxB8JX1PcdhDoqeecZOvqtcJUWaAzo_FVX&amp;clipt=EKjDARj4yQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <video class="video">
+                <source src="https://www.youtube.com/embed/Bu3Doe45lcU" type="video/mp4">
+            </video>
+            <button class="btn video__btn video__btn--position "><img src="./img/play_video_icon.svg" alt="playvideo icon"></button>
+            <p class="subtitle">
                 Hello. Our hotel has been present for over 20 years. We make the best for all our customers.
             </p>
         </div>
-        <section>
-            <div>
+        <section class="section about__services">
+            <div class="about__services_items">
                 <div>
                     <img src="./img/about/breakfast_icon.png" alt="breakfast_icon">
+                    <p class="title">Breakfast</p>
                 </div>
-                <div>
+                <div style="background-color: #BEAD8E;">
                     <img src="./img/about/airplane_icon.png" alt="airplane_icon">
+                    <p class="title title--color-white">Airport Pickup</p>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="about__services_items">
+                <div class="itemBox">
                     <img src="./img/about/city_tour_icon.svg" alt="city_tour_icon">
+                    <p class="title">City Guide</p>
                 </div>
-                <div>
+                <div class="itemBox">
                     <img src="./img/about/luxury_room_icon.svg" alt="luxury_room_icon">
+                    <p class="title">Luxury Room</p>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section about__resto">
             <img src="./img/imgRelleno.png" alt="">
             <h1 class="title">Restaurant</h1>
             <h2 class="subtitle">Get Restaurant Facilities & Many Other More</h2>
-            <p>
+            <p class="txt">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
             </p>
             <button class="btn btn_theme--color">TAKE A TOUR</button>
         </section>
-        <section class="section facilities about__facilities">
-            <h1 class="title facilities__title">Facilities</h1>
-            <h2 class="subtitle facilities__subtitle">Core Features</h2>
+        <section class="section facilities about__facilities facilities--backgroundColor-black">
+            <h1 class="title title--color-white about__facilities_title">Facilities</h1>
+            <h2 class="subtitle subtitle--color-white facilities__subtitle">Core Features</h2>
             <div class="swiper facilitiesSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="facilities__descrip">
+                        <div class="facilities__descrip facilities__descrip--backgroundColor-grey">
                             <img src="./img/high_rating_icon.svg" alt="high rating icon"/>
-                            <h3 class="facilities__descrip_title">Have High Rating</h3>
-                            <p>
+                            <h3 class="subtitle subtitle--color-white subtitle--font-size">Have High Rating</h3>
+                            <p class="txt txt--color-white">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
                             </p>
                         </div>
@@ -94,37 +99,39 @@
                     <div class="swiper-slide">Slide 8</div>
                     <div class="swiper-slide">Slide 9</div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination facilities__swiper-pagination"></div>
             </div>
         </section>
-        <section>
+        <section class="section counter">
             <h1 class="title">Counter</h1>
-            <h2 class="subtitle">Some Fun Facts</h2>
-            <div>
+            <h2 class="subtitle counter__subtitle">Some Fun Facts</h2>
+            <div class="counter__item">
                 <img src="./img/about/happy_users_icon.svg" alt="happy_users_icon"/>
-                <h1>8000</h1>
-                <p><span>Happy Users</span></p>
-                <img src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
+                <div class="counter__item_box">
+                    <h2 class="subtitle subtitle--font-size-xl">8000 <span class="span--roboto">Happy Users</span></h2>
+                </div>
+                <img class="arrow" src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
             </div>
-            <div>
+            <div class="counter__item">
                 <img src="./img/about/reviews_icon.svg" alt="reviews_icon"/>
-                <h1>10M</h1>
-                <p><span>Reviews & Appriciate</span></p>
-                <img src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
+                <div class="counter__item_box">
+                    <h2 class="subtitle subtitle--font-size-xl">10M <span class="span--roboto">Reviews & Appriciate</span></h2>
+                </div>
+                <img class="arrow" src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
             </div>
-            <div>
+            <div class="counter__item">
                 <img src="./img/about/world_icon.svg" alt="world_icon"/>
-                <h1>100</h1>
-                <p><span>Country Coverage</span></p>
-                <img src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
+                <div class="counter__item_box">
+                    <h2 class="subtitle subtitle--font-size-xl">100 <span class="span--roboto">Country Coverage</span></h2>
+                </div>
+                <img class="arrow" src="./img/about/arrow_icon.svg" alt="arrow_icon"/>
             </div>
-            <div class="swiper mySwiper">
+            <div class="swiper aboutSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img id="imagen" src="./img/imgRelleno.png" alt=""></div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide"><img id="imagen" src="./img/imgRelleno.png" alt=""></div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination "></div>
             </div>
         </section>
         <footer class="footer">
