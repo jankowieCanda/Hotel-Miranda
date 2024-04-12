@@ -24,8 +24,19 @@ const roomsSwiper = new Swiper(".roomsSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    /* type: 'custom',
+    renderCustom: function (swiper, current, total) {
+      // console.log(swiper)
+      let div = ''
+      swiper.slides.forEach((slide, index) => {
+        // console.log(index+1)
+        div += `<div class="slider-page">${index+1}</div>`
+      });
+
+      return div;
+    }, */
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + ' ' + className + '--custom">' + (index + 1) + "</span>";
     },
   },
   navigation: {

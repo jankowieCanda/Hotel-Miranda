@@ -1,32 +1,5 @@
-@use 'sass:math';
-@import 'styles/var.scss';
-@import 'styles/header.scss';
-@import 'styles/navBar.scss';
-@import 'styles/banner.scss';
-@import 'styles/availabilitySection.scss';
-@import 'styles/aboutUsSection.scss';
-@import 'styles/roomsSection.scss';
-@import 'styles/introVideoSection.scss';
-@import 'styles/facilitiesSection.scss';
-@import 'styles/menuSection.scss';
-@import 'styles/dataSection.scss';
-@import 'styles/footer.scss';
-@import 'styles/principal.scss';
-@import 'styles/videoBox.scss';
-@import 'styles/aboutServSection.scss';
-@import 'styles/aboutRestoSection.scss';
-@import 'styles/aboutFacilities.scss';
-@import 'styles/aboutCounterSection.scss';
-@import 'styles/aboutSwiper.scss';
- 
-html, * { 
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-}
-body { 
-    min-width: 320px;
-}
+@import 'var.scss';
+
 .title {
     font-family: $archivoFont;
     font-size: 0.813rem;
@@ -57,6 +30,9 @@ body {
     &--font-size-xl {
         font-size: 3.75rem;/* 60px */
         margin-bottom: 0;
+    }
+    &--margin-right {
+        margin-right: 5em;
     }  
 }
 .txt {
@@ -69,14 +45,33 @@ body {
     &--color-white {
         color: $whiteColor;
     }
+    &--roboto {
+        font-family: $robotoFont;
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: $colorSectionTitle;
+        margin-bottom: $marginBottom;
+    }
+    &--archivo-lightGrey {
+        font-family: $archivoFont;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $colorLightGrey;
+    }
 }
-.span--roboto {
-    font-family: $robotoFont;
-    font-weight: 400;
-    font-size: 1rem;
-    color: $colorSectionTitle;
-    display: block;
-    letter-spacing: 0;
+.span {
+
+    &--roboto {
+        font-family: $robotoFont;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $colorSectionTitle;
+        display: block;
+        letter-spacing: 0;
+    }
+    &--font-size {
+        font-size: 0.813rem;/* 13px */
+    }
 }
 .btn {
     display: block;
@@ -129,11 +124,27 @@ body {
         color: $whiteColor;
         background-color: $colorTheme;
     }
+    &-button-prev--custom-position, &-button-next--custom-position {
+        top: 99.6%;
+    }
     &-pagination {
         position: relative;
         bottom: 0;
         margin-bottom: $marginBottom;
+
         
+        &-bullet--custom {
+            border-radius: 0;
+            width: 2em;
+            height: 2em;
+            background-color: $whiteColor;
+            font-family: $oswaldFont;
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: $colorBlack2;
+            opacity: 1;
+            padding-top: 0.2em;
+        }
         &-bullet-active {
             background-color: $colorTheme;
         }
@@ -141,7 +152,13 @@ body {
 }
 .pricepernight {
     font-family: $archivoFont;
-    font-weight: 700;  
+    font-weight: 700;
+    font-size: 1rem; 
+    color: $colorTheme; 
+
+    &--font-size {
+        font-size: 2rem;
+    }
 }
 
 

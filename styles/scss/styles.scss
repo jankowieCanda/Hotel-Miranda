@@ -1,0 +1,31 @@
+@use 'sass:math';
+@import 'var.scss';
+@import 'global.scss';
+@import 'header.scss';
+@import 'navBar.scss';
+@import 'banner.scss';
+@import 'availabilitySection.scss';
+@import 'aboutUsSection.scss';
+@import 'roomsSection.scss';
+@import 'introVideoSection.scss';
+@import 'facilitiesSection.scss';
+@import 'menuSection.scss';
+@import 'dataSection.scss';
+@import 'footer.scss';
+@import 'principal.scss';
+@import 'videoBox.scss';
+@import 'aboutServSection.scss';
+@import 'aboutRestoSection.scss';
+@import 'aboutFacilities.scss';
+@import 'aboutCounterSection.scss';
+@import 'aboutSwiper.scss';
+@import 'roomsSwiperSection.scss';
+ 
+html, * { 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body { 
+    min-width: 320px;
+}

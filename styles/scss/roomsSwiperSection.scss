@@ -1,0 +1,31 @@
+@import 'var.scss';
+
+.roomsSwiper {
+
+    article {
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .rooms__description {
+
+            .pricepernight, .txt--archivo-lightGrey {
+                display: inline-block;
+                text-align: right;
+            }
+            .pricepernight {
+                margin-left: 5em;
+                margin-right: 0.5em;
+            }
+        }
+        
+    }
+    .slider-page {
+        display: inline-block;
+        width: 2.438em;
+        height: 2.438em;
+
+    }
+    
+}

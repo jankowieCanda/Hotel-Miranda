@@ -1,5 +1,5 @@
 @use 'sass:math';
-@import './var.scss';
+@import 'var.scss';
 
 .principal {
     background-color: $colorBlack3;
@@ -9,7 +9,7 @@
     &__goBack {
         position: absolute;
         top: 17.7em;
-        right: 3em;
+        right: 2em;
         background-color: $whiteColor;
         width: 9.75em;
         height: 3.063em;
@@ -39,6 +39,9 @@
 
             }
         }
+    }
+    &__goBack--top {
+        top: 22em;
     }
 }
 

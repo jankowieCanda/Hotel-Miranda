@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel Miranda - Rooms</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="/styles/css/styles.css"/>
     </head>
     <body>
         <header class="header">
@@ -25,165 +25,425 @@
                 </ul>
             </nav>
         </header>
-        <div class="principal rooms__principal">
-            <h1 class="title rooms__principal_title">THE ULTIMATE LUXURY</h1>
-            <h2 class="subtitle rooms__principal_subtitle">Ultimate Room</h2>
-            <div class="principal__goBack">
+        <div class="principal">
+            <h1 class="title title--color-white">THE ULTIMATE LUXURY</h1>
+            <h2 class="subtitle subtitle--margin-right subtitle--color-white">Ultimate Room</h2>
+            <div class="principal__goBack principal__goBack--top">
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="rooms.html">rooms</a></li>
+                    <li><a class="activeLink" href="rooms.html">rooms</a></li>
                 </ul>
             </div>
         </div>
-        <section>
+        <section class="section roomsPage__swiper">
             <div class="swiper roomsSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                         <article>
-                            <img class="rooms__img" src="../../img/imgRelleno.png" alt="">
-                            <div class="rooms__services">
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
                                 <ul class="rooms__services_list">
-                                    <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                    <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                                 </ul>
                             </div>
                             <div class="rooms__description">
                                 <h3 class="rooms__description_title">Minimal Duplex Room</h3>
-                                <p>
+                                <p class="txt txt--roboto">
                                     Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
                                 </p>
                                 <p class="pricepernight">$345/Night</p>
-                                <p>Book Now</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
                             </div>
                         </article>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="rooms__img" src="/img/imgRelleno.png" alt="">
+                            <div class="rooms__services rooms__services--position-bottom">
+                                <ul class="rooms__services_list">
+                                    <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                    <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                </ul>
+                            </div>
+                            <div class="rooms__description">
+                                <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                                <p class="txt txt--roboto">
+                                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
+                                </p>
+                                <p class="pricepernight">$345/Night</p>
+                                <p class="txt txt--archivo-lightGrey">Book Now</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination swiper-pagination-custom"></div>
+                <div class="swiper-button-prev swiper-button-prev--custom-position"></div>
+                <div class="swiper-button-next swiper-button-next--custom-position"></div>
             </div>
         </section>
         <footer class="footer">
