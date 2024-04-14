@@ -1,0 +1,127 @@
+@import 'var.scss';
+
+.main {
+    padding: $padding;
+
+    p {
+        margin-bottom: $marginBottom;
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: $marginBottom;
+    }
+    .availability__Form {
+        
+
+        h3 {
+            text-align: center;
+            font-family: $archivoFont;
+            font-weight: 700;
+            font-size: 1.125rem;
+            letter-spacing: -0.034em;
+            margin-bottom: $marginBottom;
+        }
+        &_data--width {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+    }
+    .label--font-styles {
+        color: $colorBlack2;
+        font-family: $archivoFont;
+        font-weight: 700;
+        font-size: 0.875rem;/* 14px */
+        width: 80%;
+    }
+    #checkin, #checkout {
+        background-color: $whiteColor;
+        border: none;
+        text-indent: 1em;
+    }
+    ::placeholder {
+        background-image: url('/img/roomDetail/calendar_icon.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 1em;
+    }
+    .section-amenities {
+        padding: 0;
+
+        ul {
+            list-style: none;
+            columns: 2;
+
+            .amenities_item {
+                font-family: $robotoFont;
+                font-weight: 500;
+                font-size: 0.938rem;
+                color: $colorSectionTitle;
+
+                img {
+                    margin-right: 0.2em;
+                }
+            }
+        }
+    }
+    .founder-data {
+        text-align: center;
+
+        h2 {
+            letter-spacing: -0.056em;
+        }
+        .founder-data__img {
+            text-align: center;
+
+            &-personnel {
+                width: 9.375em;
+                height: 9.375em;
+                border-radius: 50%;
+                margin-top: 3.75em;
+            }
+            &-checked {
+                position: relative;
+                top: -9.8em;
+                right: -11em;
+                width: 2.875em;
+                height: 2.875em;
+                background-color: $colorIntroVideo;
+                border: 4px solid $whiteColor;
+                border-radius: 50%;
+
+                img {
+                    margin: 0.7em;
+                }
+            }
+        }
+        .title-founder {
+            margin-top: -2em;
+        }
+    }
+    .cancellation {
+
+        h2 {
+            letter-spacing: 0;
+        }
+        p {
+            line-height: 1.5em;
+        }
+    }
+    
+}
+.related-rooms {
+
+    h2 {
+        letter-spacing: 0;
+    }
+    &__services {
+        top: 24.2em;
+    }
+    .rooms__description-position {
+        position: static;
+        margin-top: $margin;
+        text-align: center;
+    }
+
+}
+

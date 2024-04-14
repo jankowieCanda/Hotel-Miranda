@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
 
     amenitiesList.forEach((amenitie, i) => {
         amenities.innerHTML += `
-            <li>
+            <li class="amenities_item">
                 <img src=${amenitiesIcons[i]} alt="icon"/>
                 ${amenitie}
             </li>`

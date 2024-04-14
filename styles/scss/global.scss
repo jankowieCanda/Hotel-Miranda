@@ -2,15 +2,19 @@
 
 .title {
     font-family: $archivoFont;
-    font-size: 0.813rem;
+    font-size: 0.813rem;/* 13px */
     font-weight: 700;
     margin-bottom: $marginBottom;
-    letter-spacing: 0.175em;
+    letter-spacing: 0.175em;/* 2.8px */
     text-transform: uppercase;
     color: $colorSectionTitle;
 
     &--color-white {
         color: $whiteColor;
+    }
+    &-founder {
+        font-size: 0.875rem;
+        color: $colorIntroVideo;
     }
 }
 .subtitle {
@@ -33,7 +37,11 @@
     }
     &--margin-right {
         margin-right: 5em;
-    }  
+    }
+    &__rooms-description-title {
+        font-size: 1.5rem;/* 24px */
+        letter-spacing: -0.045em;
+    } 
 }
 .txt {
     font-family: $archivoFont;
@@ -41,22 +49,36 @@
     font-size: 0.875rem;/* 14px */
     color: $colorSectionTitle;
     margin-bottom: $marginBottom;
+    line-height: 1.5em;
 
     &--color-white {
         color: $whiteColor;
     }
+    &--font-size {
+        font-size: 1rem;
+    }
     &--roboto {
         font-family: $robotoFont;
         font-weight: 400;
-        font-size: 0.875rem;
+        font-size: 0.875rem;/* 14px */
         color: $colorSectionTitle;
         margin-bottom: $marginBottom;
+        line-height: 1.5em;
+
+        &-font-size {
+            font-size: 1rem;
+        }
     }
     &--archivo-lightGrey {
         font-family: $archivoFont;
         font-weight: 700;
         font-size: 1rem;
         color: $colorLightGrey;
+
+        &-display-inline {
+            display: inline-block;
+            margin-left: 0.5em;
+        }
     }
 }
 .span {
@@ -86,6 +108,14 @@
     margin-bottom: $marginBottom;
     cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 0.175em;
+
+    &-availability-room {
+        margin: 0 auto;
+        width: 18.125em;
+        font-weight: 400;
+        padding: $padding;
+    }
 }
 .btn_theme--color {
     background-color: $colorTheme;
@@ -158,6 +188,10 @@
 
     &--font-size {
         font-size: 2rem;
+    }
+    &--display-inline {
+        display: inline-block;
+        margin-right: 0.5em;
     }
 }
 

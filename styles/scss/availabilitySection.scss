@@ -3,6 +3,10 @@
 .availability {
     background-color: $colorBlack2;
     padding: $padding;
+
+    &--background-color {
+        background-color: $whiteColor;
+    }
     &__Form {
 
         &_data {
@@ -29,7 +33,7 @@
                 font-size: 0.875rem;
             }
             ::placeholder {
-                background-image: url('../img/calendar_icon.svg');
+                background-image: url('/img/calendar_icon.svg');
                 background-repeat: no-repeat;
             }
         }

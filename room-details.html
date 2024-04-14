@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Miranda - Room Detail</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/styles/css/styles.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__menu" src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
+            <div class="header__logo">
+                <img class="logo_H" src='../../img/header/logo_H.svg' alt="logo H" />
+                <img class="logo_miranda" src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
+            </div>
+            <img class="icon header__user_icon" src='../../img/header/user_icon.svg' alt="user icon" />
+            <img class="icon header__search_icon" src='../../img/header/search_btn_icon.svg' alt="search icon" />
+            <nav id="nav" class="navBar">
+                <ul class="navBar__list">
+                    <li class="navBar__list-item"><a href="#">About Us</a></li>
+                    <li class="navBar__list-item"><a href="#">Rooms</a></li>
+                    <li class="navBar__list-item"><a href="#">Offers</a></li>
+                    <li class="navBar__list-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="principal">
+            <h1 class="title title--color-white">THE ULTIMATE LUXURY</h1>
+            <h2 class="subtitle subtitle--margin-right subtitle--color-white">Ultimate Room</h2>
+            <div class="principal__goBack principal__goBack--top principal__goBack--width">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a class="activeLink" href="room-details.html">room details</a></li>
+                </ul>
+            </div>
+        </div>
+        <main class="main">
+            <h1 class="title">Double Bed</h1>
+            <h2 class="subtitle">Luxury Double Bed</h2>
+            <p class="pricepernight pricepernight--font-size">$345<span class="span--font-size">/Night</span></p>
+            <img class="main__img" src="/img/imgRelleno.png" alt="">
+            <section class="section availability availability--background-color">
+                <form action="" class="availability__Form">
+                    <h3>Check Availability</h3>
+                    <div class="availability__Form_data availability__Form_data--width">
+                        <label class="label--font-styles" for="checkin">Check In</label>
+                        <input id="checkin" name="checkin" type="text" placeholder="Fri, 14th June 2020">
+                    </div>
+                    <div class="availability__Form_data availability__Form_data--width">
+                        <label class="label--font-styles" for="checkout">Check Out</label>
+                        <input id="checkout" name="checkout" type="text" placeholder="Sun, 16th June 2020">
+                    </div>
+                    <button class="btn btn-availability-room btn_theme--color">Check availability</button>
+                </form>
+            </section>
+            <p class="txt txt--roboto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+            <section class="section section-amenities">
+                <h2 class="subtitle subtitle--font-size">Amenities</h3>
+                <ul id="amenities_list"></ul>
+            </section>
+            <section class="section founder-data">
+                <div class="founder-data__img">
+                    <img class="founder-data__img-personnel" src="/img/imgRelleno.png" alt="">
+                    <div class="founder-data__img-checked">
+                        <img src="/img/roomDetail/check_mark_icon.png" alt="check_mark_icon">
+                    </div>
+                </div>
+                <h2 class="subtitle subtitle--font-size">Rosalina D. William</h2>
+                <h3 class="title title-founder">Founder, Qux Co.</h3>
+                <p class="txt txt--font-size">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+            </section>
+            <section  class="section cancellation">
+                <h2 class="subtitle subtitle--font-size">Cancellation</h2>
+                <p class="txt txt--roboto txt--roboto-font-size">
+                    Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.
+                </p>
+            </section>
+        </main>
+        <section class="section related-rooms">
+            <h2 class="subtitle subtitle--font-size">Related Rooms</h2>
+            <div class="swiper related-rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rooms__services related-rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
+                        <div class="rooms__description rooms__description-position">
+                            <h3 class="subtitle subtitle__rooms-description-title">Minimal Duplex Room</h3>
+                            <p class="txt txt--roboto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                            </p>
+                            <p class="pricepernight pricepernight--display-inline">$345/Night</p>
+                            <p class="txt txt--archivo-lightGrey txt--archivo-lightGrey-display-inline">Book Now</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rooms__services related-rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
+                        <div class="rooms__description rooms__description-position">
+                            <h3 class="subtitle subtitle__rooms-description-title">Minimal Duplex Room</h3>
+                            <p class="txt txt--roboto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                            </p>
+                            <p class="pricepernight pricepernight--display-inline">$345/Night</p>
+                            <p class="txt txt--archivo-lightGrey txt--archivo-lightGrey-display-inline">Book Now</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rooms__services related-rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
+                        <div class="rooms__description rooms__description-position">
+                            <h3 class="subtitle subtitle__rooms-description-title">Minimal Duplex Room</h3>
+                            <p class="txt txt--roboto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                            </p>
+                            <p class="pricepernight pricepernight--display-inline">$345/Night</p>
+                            <p class="txt txt--archivo-lightGrey txt--archivo-lightGrey-display-inline">Book Now</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <div class="footer__logo_box footer__logo_box-H">
+                    <p class="logo logo-H">H</p>
+                </div>
+                <div class="footer__logo_box footer__logo_box-Miranda">
+                    <p class="logo logo-Miranda">Hotel <span>Miranda</span></p>
+                </div>
+            </div>
+            <div class="footer__desc-txt">
+                <p class="footer__desc-txt_paragraph">
+                    Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+                </p>
+            </div>
+            <div class="footer__socials">
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/facebook_icon.svg" alt="facebook icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/twitter_icon.svg" alt="twitter icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/behance_icon.svg" alt="behance icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/linkedin_icon.svg" alt="linkedin icon" />
+                </div>
+                <div class="footer__socials_iconBox">
+                    <img src="../../img/footer/youtube_icon.svg" alt="youtube icon" />
+                </div>
+            </div>
+            <section class="section footer__section footer__section-services">
+                <h3 class="footer__section_title subtitle">Services.</h3>
+                <ul id="services_list" class="footer__section_services-list"></ul>
+            </section>
+            <section class="section footer__section footer__section_contact">
+                <h3 class="footer__section_title subtitle">Contact Us.</h3>
+                <div class="footer__section_contact-data">
+                    <img src="../../img/footer/phone_icon.svg" alt="phone icon" />
+                    <h4 class="subtitle">Phone Number <span>+987 876 765 76 577</span></h4>
+                    
+                </div>
+                <div class="footer__section_contact-data">
+                    <img src="../../img/footer/mail_icon.svg" alt="mail icon" />
+                    <h4 class="subtitle">Email <span>info@email.com</span></h4>
+                </div>
+                <div class="footer__section_contact-data">
+                    <img src="../../img/footer/location_icon.svg" alt="location icon" />
+                    <h4 class="subtitle">Location <span>sarasa</span></h4>
+                </div>
+            </section>
+            <section class="section footer__section footer__section_copyright">
+                <div class="footer__section_copyright-by">
+                    <p>Copyright By@Example - 2024</p>
+                </div>
+                <div class="footer__section_copyright-terms&policy">
+                    <ul>
+                        <li>Terms of use</li>
+                        <li>|</li>
+                        <li>Privacy Environmental Policy</li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/lists.js"></script> 
+</html>

@@ -82,17 +82,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
 .title {
   font-family: "archivo";
-  font-size: 0.813rem;
+  font-size: 0.813rem; /* 13px */
   font-weight: 700;
   margin-bottom: 1.25em;
-  letter-spacing: 0.175em;
+  letter-spacing: 0.175em; /* 2.8px */
   text-transform: uppercase;
   color: #777777;
 }
 .title--color-white {
   color: #FFFFFF;
+}
+.title-founder {
+  font-size: 0.875rem;
+  color: #BDAC8D;
 }
 
 .subtitle {
@@ -116,6 +124,10 @@
 .subtitle--margin-right {
   margin-right: 5em;
 }
+.subtitle__rooms-description-title {
+  font-size: 1.5rem; /* 24px */
+  letter-spacing: -0.045em;
+}
 
 .txt {
   font-family: "archivo";
@@ -123,22 +135,34 @@
   font-size: 0.875rem; /* 14px */
   color: #777777;
   margin-bottom: 1.25em;
+  line-height: 1.5em;
 }
 .txt--color-white {
   color: #FFFFFF;
 }
+.txt--font-size {
+  font-size: 1rem;
+}
 .txt--roboto {
   font-family: "roboto";
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem; /* 14px */
   color: #777777;
   margin-bottom: 1.25em;
+  line-height: 1.5em;
+}
+.txt--roboto-font-size {
+  font-size: 1rem;
 }
 .txt--archivo-lightGrey {
   font-family: "archivo";
   font-weight: 700;
   font-size: 1rem;
   color: #BDBDBD;
+}
+.txt--archivo-lightGrey-display-inline {
+  display: inline-block;
+  margin-left: 0.5em;
 }
 
 .span--roboto {
@@ -166,6 +190,13 @@
   margin-bottom: 1.25em;
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: 0.175em;
+}
+.btn-availability-room {
+  margin: 0 auto;
+  width: 18.125em;
+  font-weight: 400;
+  padding: 1.25em;
 }
 
 .btn_theme--color {
@@ -242,6 +273,10 @@
 .pricepernight--font-size {
   font-size: 2rem;
 }
+.pricepernight--display-inline {
+  display: inline-block;
+  margin-right: 0.5em;
+}
 
 .header {
   width: 100%;
@@ -316,6 +351,9 @@
   background-color: #222222;
   padding: 1.25em;
 }
+.availability--background-color {
+  background-color: #FFFFFF;
+}
 .availability__Form_data label {
   display: block;
   font-family: "roboto";
@@ -338,7 +376,7 @@
   font-size: 0.875rem;
 }
 .availability__Form_data ::placeholder {
-  background-image: url("../img/calendar_icon.svg");
+  background-image: url("/img/calendar_icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -717,6 +755,9 @@
 .principal__goBack--top {
   top: 22em;
 }
+.principal__goBack--width {
+  width: 12.938em;
+}
 
 .videoBox {
   position: relative;
@@ -829,6 +870,112 @@
   display: inline-block;
   width: 2.438em;
   height: 2.438em;
+}
+
+.main {
+  padding: 1.25em;
+}
+.main p {
+  margin-bottom: 1.25em;
+}
+.main__img {
+  width: 100%;
+  margin-bottom: 1.25em;
+}
+.main .availability__Form h3 {
+  text-align: center;
+  font-family: "archivo";
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -0.034em;
+  margin-bottom: 1.25em;
+}
+.main .availability__Form_data--width {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .label--font-styles {
+  color: #222222;
+  font-family: "archivo";
+  font-weight: 700;
+  font-size: 0.875rem; /* 14px */
+  width: 80%;
+}
+.main #checkin, .main #checkout {
+  background-color: #FFFFFF;
+  border: none;
+  text-indent: 1em;
+}
+.main ::placeholder {
+  background-image: url("/img/roomDetail/calendar_icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 1em;
+}
+.main .section-amenities {
+  padding: 0;
+}
+.main .section-amenities ul {
+  list-style: none;
+  columns: 2;
+}
+.main .section-amenities ul .amenities_item {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 0.938rem;
+  color: #777777;
+}
+.main .section-amenities ul .amenities_item img {
+  margin-right: 0.2em;
+}
+.main .founder-data {
+  text-align: center;
+}
+.main .founder-data h2 {
+  letter-spacing: -0.056em;
+}
+.main .founder-data .founder-data__img {
+  text-align: center;
+}
+.main .founder-data .founder-data__img-personnel {
+  width: 9.375em;
+  height: 9.375em;
+  border-radius: 50%;
+  margin-top: 3.75em;
+}
+.main .founder-data .founder-data__img-checked {
+  position: relative;
+  top: -9.8em;
+  right: -11em;
+  width: 2.875em;
+  height: 2.875em;
+  background-color: #BDAC8D;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+}
+.main .founder-data .founder-data__img-checked img {
+  margin: 0.7em;
+}
+.main .founder-data .title-founder {
+  margin-top: -2em;
+}
+.main .cancellation h2 {
+  letter-spacing: 0;
+}
+.main .cancellation p {
+  line-height: 1.5em;
+}
+
+.related-rooms h2 {
+  letter-spacing: 0;
+}
+.related-rooms__services {
+  top: 24.2em;
+}
+.related-rooms .rooms__description-position {
+  position: static;
+  margin-top: 1.25em;
+  text-align: center;
 }
 
 html, * {
