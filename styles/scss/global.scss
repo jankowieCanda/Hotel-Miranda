@@ -94,6 +94,13 @@
     &--font-size {
         font-size: 0.813rem;/* 13px */
     }
+    &-old_price {
+        font-size: 0.688rem;/* 11px */
+        text-decoration: line-through;
+    }
+    &-new_price {
+        font-size: 0.75rem;
+    }
 }
 .btn {
     display: block;
@@ -192,6 +199,15 @@
     &--display-inline {
         display: inline-block;
         margin-right: 0.5em;
+    }
+    &-new_price {
+        font-size: 1.875rem;
+        color: $colorNewPrice;
+    }
+    &-old_price {
+        font-size: 1.438rem;
+        color: $colorTheme;
+        text-decoration: line-through;
     }
 }
 

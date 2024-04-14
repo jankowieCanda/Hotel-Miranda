@@ -86,6 +86,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
 .title {
   font-family: "archivo";
   font-size: 0.813rem; /* 13px */
@@ -175,6 +179,13 @@
 }
 .span--font-size {
   font-size: 0.813rem; /* 13px */
+}
+.span-old_price {
+  font-size: 0.688rem; /* 11px */
+  text-decoration: line-through;
+}
+.span-new_price {
+  font-size: 0.75rem;
 }
 
 .btn {
@@ -276,6 +287,15 @@
 .pricepernight--display-inline {
   display: inline-block;
   margin-right: 0.5em;
+}
+.pricepernight-new_price {
+  font-size: 1.875rem;
+  color: #DE5777;
+}
+.pricepernight-old_price {
+  font-size: 1.438rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
 }
 
 .header {
@@ -976,6 +996,37 @@
   position: static;
   margin-top: 1.25em;
   text-align: center;
+  padding: 0;
+}
+
+.offers-item__img img {
+  width: 100%;
+}
+.offers-item__prices {
+  text-align: right;
+  position: relative;
+  right: 1em;
+  bottom: 6.5em;
+}
+.offers-item__descrip {
+  padding: 1.25em;
+  margin-top: -8em;
+}
+.offers-item__descrip h1 {
+  font-size: 0.875rem;
+}
+.offers-item__descrip h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.09em;
+  margin-right: 2em;
+}
+
+.popular-list {
+  background-color: #222222;
+}
+.popular-list__swiper-slide {
+  background-color: #FFFFFF;
+  top: -2.4em;
 }
 
 html, * {
