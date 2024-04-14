@@ -94,6 +94,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
 .title {
   font-family: "archivo";
   font-size: 0.813rem; /* 13px */
@@ -213,9 +221,16 @@
   font-weight: 400;
   padding: 1.25em;
 }
-
 .btn_theme--color {
   background-color: #BEAD8E;
+}
+.btn_send-form {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  width: 16.125em;
 }
 
 .introVideo__btn--video {
@@ -1041,6 +1056,73 @@
 .popular-list__swiper-slide {
   background-color: #FFFFFF;
   top: -2.4em;
+}
+
+.contact-data__item {
+  margin-top: 1.25em;
+}
+.contact-data__item-img {
+  margin-right: 1em;
+  display: inline-block;
+}
+.contact-data__item-img img {
+  padding-bottom: 2.75em;
+}
+.contact-data__item-descrip {
+  width: 12em;
+  display: inline-block;
+  margin-right: 2em;
+}
+.contact-data__item-descrip h4 {
+  font-size: 1.25rem;
+}
+.contact-data__item-descrip p span {
+  display: block;
+}
+.contact-data__img {
+  margin-top: 6.25em;
+}
+.contact-data__img img {
+  width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+  appearance: none;
+  border: none;
+  height: 4.188em;
+  text-indent: 2em;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1.25em;
+}
+.contact-form #fullName::placeholder {
+  background-image: url("/img/contact/person_icon.svg");
+  background-repeat: no-repeat;
+  color: #777777;
+}
+.contact-form #phoneNum::placeholder {
+  background-image: url("/img/contact/contact_telephone_icon.svg");
+  background-repeat: no-repeat;
+  color: #777777;
+}
+.contact-form #email::placeholder {
+  background-image: url("/img/contact/email_icon.svg");
+  background-repeat: no-repeat;
+  color: #777777;
+}
+.contact-form #subject::placeholder {
+  background-image: url("/img/contact/subject_icon.svg");
+  background-repeat: no-repeat;
+  color: #777777;
+}
+.contact-form #message {
+  height: 10.938em;
+}
+.contact-form #message::placeholder {
+  background-image: url("/img/contact/pencil_icon.svg");
+  background-repeat: no-repeat;
+  color: #777777;
 }
 
 html, * {

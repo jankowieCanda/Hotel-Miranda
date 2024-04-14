@@ -123,9 +123,17 @@
         font-weight: 400;
         padding: $padding;
     }
-}
-.btn_theme--color {
-    background-color: $colorTheme;
+    &_theme--color {
+        background-color: $colorTheme;
+    }
+    &_send-form {
+        font-family: $robotoFont;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        margin: 0 auto;
+        width: 16.125em;
+    }
 }
 .introVideo__btn--video{
     position: relative;

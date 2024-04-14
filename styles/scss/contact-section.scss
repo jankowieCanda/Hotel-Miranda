@@ -1,0 +1,59 @@
+@import 'var.scss';
+
+.contact {
+
+    &-form {
+        
+        input, textarea {
+            appearance: none;
+            border: none;
+            height: 4.188em;
+            text-indent: 2em;
+            font-family: $robotoFont;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: $padding;
+        }
+        #fullName {
+
+            &::placeholder {
+                background-image: url('/img/contact/person_icon.svg');
+                background-repeat: no-repeat;
+                color: $colorSectionTitle;
+            }
+        }
+        #phoneNum {
+
+            &::placeholder {
+                background-image: url('/img/contact/contact_telephone_icon.svg');
+                background-repeat: no-repeat;
+                color: $colorSectionTitle;
+            }
+        }
+        #email {
+
+            &::placeholder {
+                background-image: url('/img/contact/email_icon.svg');
+                background-repeat: no-repeat;
+                color: $colorSectionTitle;
+            }
+        }
+        #subject {
+
+            &::placeholder {
+                background-image: url('/img/contact/subject_icon.svg');
+                background-repeat: no-repeat;
+                color: $colorSectionTitle;
+            }
+        }
+        #message {
+            height: 10.938em;
+            
+            &::placeholder {
+                background-image: url('/img/contact/pencil_icon.svg');
+                background-repeat: no-repeat;
+                color: $colorSectionTitle;
+            }
+        }
+    }
+}

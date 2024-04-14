@@ -1,0 +1,40 @@
+@use 'sass:math';
+@import 'var.scss';
+
+.contact-data {
+
+    &__item {
+        margin-top: $margin;
+
+        &-img {
+            margin-right: 1em;
+            display: inline-block;
+
+            img {
+                padding-bottom: $paddingBottom*2.2;
+            }
+        }
+        &-descrip {
+            width: 12em;
+            display: inline-block;
+            margin-right: 2em;
+
+            h4 {
+                font-size: 1.25rem;
+            }
+            p {
+                span {
+                    display: block;
+                }
+            }
+        }        
+
+    }
+    &__img {
+        margin-top: $margin*5;
+
+        img {
+            width: 100%;
+        }
+    }
+}
