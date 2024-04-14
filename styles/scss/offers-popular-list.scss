@@ -1,0 +1,21 @@
+@import 'var.scss';
+
+.popular-list {
+    background-color: $colorBlack2;
+    text-align: center;
+
+    h1 {
+        color: $colorIntroVideo;
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        letter-spacing: -0.05em;
+
+    }
+    &__swiper-slide {
+        background-color: $whiteColor;
+        top: -2.4em;
+    }
+}
