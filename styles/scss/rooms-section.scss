@@ -5,8 +5,8 @@
     padding-bottom: $paddingBottom;
     text-align: center;
     
-    &__title {
-        color: $colorSectionTitle;
+    h1 {
+        font-size: 0.875rem;
     }
     &__swiper_img {
         width: 100%;
@@ -45,12 +45,8 @@
         background-color: $whiteColor;
         padding: $padding;
 
-        &_title {
-            font-family: $oldStandardFont;
-            font-weight: 400;
+        h3 {
             font-size: 1.75rem;
-            letter-spacing: -0.075em;
-            margin-bottom: $marginBottom;
         }
     }
 }

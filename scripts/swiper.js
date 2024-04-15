@@ -1,40 +1,29 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  /* direction: 'vertical',
-  loop: true, */
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   /* direction: 'vertical',
+//   loop: true, */
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 
-  // And if we need scrollbar
-  /* scrollbar: {
-    el: '.swiper-scrollbar',
-  }, */
-});
+//   // And if we need scrollbar
+//   /* scrollbar: {
+//     el: '.swiper-scrollbar',
+//   }, */
+// });
 
 const roomsSwiper = new Swiper(".roomsSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    /* type: 'custom',
-    renderCustom: function (swiper, current, total) {
-      // console.log(swiper)
-      let div = ''
-      swiper.slides.forEach((slide, index) => {
-        // console.log(index+1)
-        div += `<div class="slider-page">${index+1}</div>`
-      });
-
-      return div;
-    }, */
     renderBullet: function (index, className) {
       return '<span class="' + className + ' ' + className + '--custom">' + (index + 1) + "</span>";
     },
@@ -44,3 +33,18 @@ const roomsSwiper = new Swiper(".roomsSwiper", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const indexSwiper = new Swiper('.index-swiper', {
+
+  // If we need pagination
+  pagination: {
+    el: '.index-swiper-pagination',
+  },
+});
+
+const ourFoodSwiper = new Swiper('.our-food-swiper', {
+  navigation: {
+    nextEl: '.our-food-swiper-next',
+    prevEl: '.our-food-swiper-prev',
+  },
+})

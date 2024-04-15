@@ -104,7 +104,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
 .title {
   font-family: "archivo";
-  font-size: 0.813rem; /* 13px */
+  font-size: 0.875rem; /* 14px */
   font-weight: 700;
   margin-bottom: 1.25em;
   letter-spacing: 0.175em; /* 2.8px */
@@ -123,7 +123,7 @@
   font-family: "old standard tt";
   font-size: 3.5rem; /* 56px */
   font-weight: 400;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.075em; /* 1.2px */
   margin-bottom: 1.25em;
   color: #222222;
 }
@@ -132,6 +132,7 @@
 }
 .subtitle--font-size {
   font-size: 1.875rem; /* 30px */
+  letter-spacing: -0.056; /* 0.9px */
 }
 .subtitle--font-size-xl {
   font-size: 3.75rem; /* 60px */
@@ -142,7 +143,7 @@
 }
 .subtitle__rooms-description-title {
   font-size: 1.5rem; /* 24px */
-  letter-spacing: -0.045em;
+  letter-spacing: -0.045em; /* 0.72px */
 }
 
 .txt {
@@ -378,13 +379,6 @@
   padding-top: 8.75em;
   padding-bottom: 1.25em;
 }
-.banner__title, .banner__subtitle {
-  color: #FFFFFF;
-}
-.banner__title {
-  margin-right: 10em;
-  text-align: left;
-}
 
 .availability {
   background-color: #222222;
@@ -418,54 +412,45 @@
   background-image: url("/img/calendar_icon.svg");
   background-repeat: no-repeat;
 }
+.availability__Form button {
+  width: 18.125em;
+}
 
 .aboutUs {
   text-align: center;
 }
-.aboutUs__title {
-  color: #777777;
+.aboutUs h1, .aboutUs h2 {
   text-align: left;
 }
 .aboutUs__txt_justify {
   text-align: left;
-  font-family: "archivo";
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #777777;
-  line-height: 1.5em;
   padding-bottom: 1.25em;
 }
-.aboutUs__qualities {
+.aboutUs-qualities-item {
   padding: 2.5em;
 }
-.aboutUs__qualities_pic {
+.aboutUs-qualities-item__pic {
   width: 100%;
 }
-.aboutUs__qualities_descrip {
-  padding: 1.25em;
+.aboutUs-qualities-item__descrip {
+  padding: 2.5em 1.25em 1.25em;
 }
-.aboutUs__qualities_descrip-icon {
+.aboutUs-qualities-item__descrip img {
   margin-bottom: 1.25em;
 }
-.aboutUs__qualities_descrip-title {
-  margin-bottom: 1.25em;
-  font-family: "old standard tt";
-  font-weight: 400;
-  font-size: 1.875rem;
+.aboutUs-qualities-item__descrip h3 {
   color: #111111;
   letter-spacing: -0.056em;
 }
-.aboutUs__qualities_descrip-txt {
-  font-family: "roboto";
-  font-weight: 400;
-  font-size: 0.875rem;
+.aboutUs-qualities-item__descrip p {
   text-align: center;
   color: #111111;
+  line-height: 1.375em;
 }
-.aboutUs__qualities_descrip-title--color, .aboutUs__qualities_descrip-txt--color {
+.aboutUs-qualities-item__descrip .luxury__title, .aboutUs-qualities-item__descrip .luxury__txt {
   color: #FFFFFF;
 }
-.aboutUs__qualities_descrip--backgroundColor {
+.aboutUs-qualities-item__descrip--backgroundColor {
   background-color: #222222;
 }
 
@@ -474,8 +459,8 @@
   padding-bottom: 1.25em;
   text-align: center;
 }
-.rooms__title {
-  color: #777777;
+.rooms h1 {
+  font-size: 0.875rem;
 }
 .rooms__swiper_img {
   width: 100%;
@@ -510,44 +495,25 @@
   background-color: #FFFFFF;
   padding: 1.25em;
 }
-.rooms__description_title {
-  font-family: "old standard tt";
-  font-weight: 400;
+.rooms__description h3 {
   font-size: 1.75rem;
-  letter-spacing: -0.075em;
-  margin-bottom: 1.25em;
 }
 
 .introVideo {
   background-color: #222222;
   padding: 1.25em;
 }
-.introVideo__title {
-  color: #BDAC8D;
-}
-.introVideo__subtitle {
-  color: #FFFFFF;
-}
 .introVideo p {
   color: #C2C2C2;
-  font-family: "archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  margin-bottom: 1.25em;
 }
 .introVideo__video {
-  margin-bottom: 1.25em;
-}
-.introVideo__video #videoRelleno {
   width: 100%;
+  margin-bottom: 1.25em;
 }
 
 .facilities {
   padding: 1.25em;
   text-align: center;
-}
-.facilities__title {
-  color: #777777;
 }
 .facilities__descrip {
   text-align: left;
@@ -557,63 +523,58 @@
 .facilities__descrip img {
   margin-bottom: 1.25em;
 }
-.facilities__descrip_title {
-  font-family: "old standard tt";
-  font-weight: 400;
-  font-size: 1.875rem;
-  letter-spacing: -0.056em;
-  margin-bottom: 1.25em;
-}
-.facilities__descrip p {
-  font-family: "archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: #777777;
-  margin-bottom: 1.25em;
-}
 
 .ourFood {
   text-align: left;
-  margin-left: 1.25em;
+  background-image: url("/img/donut_icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  padding-top: 7em;
 }
-.ourFood #donut {
-  position: relative;
-  right: -75%;
+.ourFood h2 {
+  margin-right: 2em;
 }
-.ourFood__title {
-  color: #777777;
-}
-.ourFood__subtitle {
-  margin-right: 2.5em;
-}
-.ourFood__descrip_item .imgBox {
+.ourFood__descrip_item-box .imgBox {
   width: 30%;
   display: inline-block;
 }
-.ourFood__descrip_item .imgBox img {
+.ourFood__descrip_item-box .imgBox img {
   width: 100%;
+  padding: 0.25em 0;
 }
-.ourFood__descrip_item .plates {
+.ourFood__descrip_item-box .plate {
   position: relative;
   top: -1em;
   display: inline-block;
   width: 60%;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
-.ourFood__descrip_item .plates__title {
-  font-family: "old standard tt";
-  font-weight: 400;
-  font-size: 1.5em;
-  letter-spacing: -0.045em;
+.ourFood__descrip_item-box .plate h3 {
+  margin: 0;
+}
+.ourFood__descrip_item-box .plate p {
   color: #222222;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
-.ourFood__descrip_item .plates p {
-  font-family: "roboto";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5em;
-  margin-right: 1.5em;
+.ourFood .swiper-wrapper {
+  padding-bottom: 3em;
+}
+.ourFood .swiper-button-next--custom-position {
+  opacity: 1;
+}
+.ourFood .swiper-button-prev--custom-position {
+  left: auto;
+  right: 4em;
+  opacity: 1;
+}
+
+.index-swiper img {
+  margin: 0 auto;
+  width: 100%;
+}
+.index-swiper .swiper-wrapper {
+  padding-bottom: 1.25em;
 }
 
 .data {

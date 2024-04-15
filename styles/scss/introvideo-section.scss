@@ -1,0 +1,14 @@
+@import 'var.scss';
+
+.introVideo {
+    background-color: $colorBlack2;
+    padding: $padding;
+
+    p {
+        color: $colorIntroVideoParagraph;
+    }
+    &__video {
+        width: 100%;
+        margin-bottom: $marginBottom;
+    }
+}

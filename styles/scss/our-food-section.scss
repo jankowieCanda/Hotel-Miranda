@@ -1,0 +1,59 @@
+@use 'sass:math';
+@import 'var.scss';
+
+.ourFood {
+    text-align: left;
+    background-image: url('/img/donut_icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    padding-top: 7em;
+
+    h2 {
+        margin-right: 2em;
+    }
+    &__descrip_item {
+        
+        &-box {
+
+            .imgBox {
+                width: 30%;
+                display: inline-block;
+
+                img{
+                    width: 100%;
+                    padding: 0.25em 0;
+                }
+            }
+            .plate {
+                position: relative;
+                top: -1em;
+                display: inline-block;
+                width: 60%;
+                margin-left: 1em;
+
+                h3 {
+                    margin: 0;
+                }
+                p {
+                    color: $colorBlack2;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .swiper-wrapper {
+        padding-bottom: 3em;
+    }
+    .swiper-button-next--custom-position {
+        opacity: 1;
+    }
+    .swiper-button-prev--custom-position {
+        left: auto;
+        right: 4em;
+        opacity: 1;
+    }
+        
+}
+
+

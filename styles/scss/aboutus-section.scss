@@ -1,0 +1,44 @@
+@use 'sass:math';
+@import 'var.scss';
+
+.aboutUs {
+    text-align: center;
+
+    h1, h2 {
+        text-align: left;
+    }
+    &__txt_justify {
+        text-align: left;
+        padding-bottom: $paddingBottom;
+    }
+    &-qualities-item {
+        padding: $padding*2;
+        
+        &__pic {
+            width: 100%;
+        }
+        &__descrip {
+            padding: $padding*2 $padding $padding;
+
+            img {
+                margin-bottom: $marginBottom;
+            }
+            h3 {
+                color: $colorBlack;
+                letter-spacing: -0.056em;
+            }
+            p {
+                text-align: center;
+                color: $colorBlack;
+                line-height: 1.375em;
+            }
+            .luxury__title, .luxury__txt {
+                color: $whiteColor;
+            }
+        }
+        &__descrip--backgroundColor {
+            background-color: $colorBlack2;
+        }
+    }
+
+}

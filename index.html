@@ -9,27 +9,27 @@
     </head>
     <body>
         <header class="header">
-            <img class="header__menu" src='../../img/header/menu_btn_icon.svg' alt="menu btn" />
+            <img class="header__menu" src='/img/header/menu_btn_icon.svg' alt="menu btn" />
             <div class="header__logo">
-                <img class="logo_H" src='../../img/header/logo_H.svg' alt="logo H" />
-                <img class="logo_miranda" src='../../img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
+                <img class="logo_H" src='/img/header/logo_H.svg' alt="logo H" />
+                <img class="logo_miranda" src='/img/header/logo_Hotel_Miranda.svg' alt="Hotel Miranda" />
             </div>
-            <img class="icon header__user_icon" src='../../img/header/user_icon.svg' alt="user icon" />
-            <img class="icon header__search_icon" src='../../img/header/search_btn_icon.svg' alt="search icon" />
+            <img class="icon header__user_icon" src='/img/header/user_icon.svg' alt="user icon" />
+            <img class="icon header__search_icon" src='/img/header/search_btn_icon.svg' alt="search icon" />
             <nav id="nav" class="navBar">
                 <ul class="navBar__list">
-                    <li class="navBar__list-item"><a href="#">About Us</a></li>
-                    <li class="navBar__list-item"><a href="#">Rooms</a></li>
-                    <li class="navBar__list-item"><a href="#">Offers</a></li>
-                    <li class="navBar__list-item"><a href="#">Contact</a></li>
+                    <li class="navBar__list-item"><a href="about.html">About Us</a></li>
+                    <li class="navBar__list-item"><a href="rooms.html">Rooms</a></li>
+                    <li class="navBar__list-item"><a href="offers.html">Offers</a></li>
+                    <li class="navBar__list-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="banner">
-            <h1 class="title banner__title">THE ULTIMATE LUXURY EXPERIENCE</h1>
-            <h2 class="subtitle banner__subtitle">The Perfect Base For You</h2>
-            <button class="btn btn_theme--color banner__btn">TAKE A TOUR</button>
-            <button class="btn banner__btn">LEARN MORE</button>
+            <h1 class="title title--color-white subtitle--margin-right">THE ULTIMATE LUXURY EXPERIENCE</h1>
+            <h2 class="subtitle subtitle--color-white">The Perfect Base For You</h2>
+            <button class="btn btn_theme--color">TAKE A TOUR</button>
+            <button class="btn">LEARN MORE</button>
         </div>
         <section class="section availability">
             <form action="" class="availability__Form">
@@ -41,88 +41,131 @@
                     <label for="departureDate">Departure Date</label>
                     <input id="departureDate" name="departureDate" type="text" placeholder="30th march 2020">
                 </div>
-                <button class="btn btn_theme--color availability__btn">Check availability</button>
+                <button class="btn btn_theme--color">Check availability</button>
             </form>
         </section>
         <section class="section aboutUs">
-            <h1 class="title aboutUs__title">About Us</h1>
-            <h2 class="subtitle aboutUs__subtitle">Discover Our Underground.</h2>
+            <h1 class="title">About Us</h1>
+            <h2 class="subtitle">Discover Our Underground</h2>
             <p class="txt aboutUs__txt_justify">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <button class="btn btn_theme--color aboutUs__btn">Book Now</button>
-            <div class="aboutUs__qualities aboutUs__qualities_strongTeam">
-                <img class="aboutUs__qualities_pic" src="./img/imgRelleno.png" alt="">
-                <div class="aboutUs__qualities_descrip">
-                    <img class="aboutUs__qualities_descrip-icon" src="./img/strongTeam_icon.svg" alt="strong team icon">
-                    <h3 class="aboutUs__qualities_descrip-title">Strong Team</h3>
-                    <p class="aboutUs__qualities_descrip-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div class="aboutUs-qualities-item">
+                <img class="aboutUs-qualities-item__pic" src="/img/imgRelleno.png" alt="">
+                <div class="aboutUs-qualities-item__descrip">
+                    <img src="/img/strongTeam_icon.svg" alt="strong team icon">
+                    <h3 class="subtitle subtitle--font-size">Strong Team</h3>
+                    <p class="txt txt--roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
-            <div class="aboutUs__qualities aboutUs__qualities_luxuryRoom">
-                <img class="aboutUs__qualities_pic" src="./img/imgRelleno.png" alt="">
-                <div class="aboutUs__qualities_descrip aboutUs__qualities_descrip--backgroundColor">
-                    <img class="aboutUs__qualities_descrip-icon" src="../../img/luxuryRoom_icon.svg" alt="luxury room icon">
-                    <h3 class="aboutUs__qualities_descrip-title aboutUs__qualities_descrip-title--color">Luxury Room</h3>
-                    <p class="aboutUs__qualities_descrip-txt aboutUs__qualities_descrip-txt--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div class="aboutUs-qualities-item">
+                <img class="aboutUs-qualities-item__pic" src="./img/imgRelleno.png" alt="">
+                <div class="aboutUs-qualities-item__descrip aboutUs-qualities-item__descrip--backgroundColor">
+                    <img src="../../img/luxuryRoom_icon.svg" alt="luxury room icon">
+                    <h3 class="subtitle subtitle--font-size luxury__title">Luxury Room</h3>
+                    <p class="txt txt--roboto luxury__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
         </section>
         <section class="section rooms">
-            <h1 class="title rooms__title">Rooms</h1>
-            <h2 class="subtitle rooms__subtitle">Hand Picked Rooms</h2>
+            <h1 class="title">Rooms</h1>
+            <h2 class="subtitle">Hand Picked Rooms</h2>
             <div class="swiper rooms__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="rooms__services">
                             <ul class="rooms__services_list">
-                                <li class="rooms__services_list-item"><img src="./img/bed_icon.svg" alt="bed icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/wifi_icon.svg" alt="wifi icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/automobile_icon.svg" alt="automobile icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/airconditioner_icon.svg" alt="airconditioner icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/gym_icon.svg" alt="gym icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/smoking_no_icon.svg" alt="smoking_no icon"></li>
-                                <li class="rooms__services_list-item"><img src="./img/cocktail_icon.svg" alt="cocktail icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
                             </ul>
                         </div>
-                        <img class="rooms__swiper_img" src="../../img/imgRelleno.png" alt="">
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
                         <div class="rooms__description">
-                            <h3 class="rooms__description_title">Minimal Duplex Room</h3>
+                            <h3 class="subtitle">Minimal Duplex Room</h3>
                             <p class="txt txt--roboto">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                             </p>
                             <p class="pricepernight pricepernight--font-size">$345<span class="span--font-size">/Night</span></p>
                         </div>
                     </div>
-                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
-                    <div class="swiper-slide"><img src="../../img/imgRelleno.png" alt=""></div>
+                    <div class="swiper-slide">
+                        <div class="rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
+                        <div class="rooms__description">
+                            <h3 class="subtitle">Minimal Duplex Room</h3>
+                            <p class="txt txt--roboto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <p class="pricepernight pricepernight--font-size">$345<span class="span--font-size">/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rooms__services">
+                            <ul class="rooms__services_list">
+                                <li class="rooms__services_list-item"><img src="/img/bed_icon.svg" alt="bed icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/wifi_icon.svg" alt="wifi icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/automobile_icon.svg" alt="automobile icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/airconditioner_icon.svg" alt="airconditioner icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/gym_icon.svg" alt="gym icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/smoking_no_icon.svg" alt="smoking_no icon"></li>
+                                <li class="rooms__services_list-item"><img src="/img/cocktail_icon.svg" alt="cocktail icon"></li>
+                            </ul>
+                        </div>
+                        <img class="rooms__swiper_img" src="/img/imgRelleno.png" alt="">
+                        <div class="rooms__description">
+                            <h3 class="subtitle">Minimal Duplex Room</h3>
+                            <p class="txt txt--roboto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p>
+                            <p class="pricepernight pricepernight--font-size">$345<span class="span--font-size">/Night</span></p>
+                        </div>
+                    </div>
                 </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="section introVideo">
-            <h1 class="title introVideo__title">Intro video</h1>
-            <h2 class="subtitle introVideo__subtitle">Meet With Our Luxury Place.</h2>
-            <p>
+            <h1 class="title title-founder">Intro video</h1>
+            <h2 class="subtitle subtitle--color-white">Meet With Our Luxury Place.</h2>
+            <p class="txt">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
             </p>
-            <picture class="introVideo__video">
-                <img id="videoRelleno" src="./img/imgRelleno.png" alt=""/>
-                <button class="btn introVideo__btn introVideo__btn--video"><img src="./img/play_video_icon.svg" alt="playvideo icon"></button>
-            </picture>
+            <div class="videoBox">
+                <video class="introVideo__video">
+                    <source src="https://www.youtube.com/embed/Bu3Doe45lcU" type="video/mp4">
+                    <!-- <button class="btn introVideo__btn introVideo__btn--video"><img src="./img/play_video_icon.svg" alt="playvideo icon"></button> -->
+                </video>
+                <button class="btn video__btn video__btn--position "><img src="./img/play_video_icon.svg" alt="playvideo icon"></button>
+            </div>
             <button class="btn btn_theme--color introVideo__btn">Book Now</button>
         </section>
         <section class="section facilities">
-            <h1 class="title facilities__title">Facilities</h1>
-            <h2 class="subtitle facilities__subtitle">Core Features</h2>
+            <h1 class="title">Facilities</h1>
+            <h2 class="subtitle">Core Features</h2>
             <div class="swiper facilitiesSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="facilities__descrip">
-                            <img src="./img/high_rating_icon.svg" alt="high rating icon"/>
-                            <h3 class="facilities__descrip_title">Have High Rating</h3>
-                            <p>
+                            <img src="/img/high_rating_icon.svg" alt="high rating icon"/>
+                            <h3 class="subtitle subtitle--font-size">Have High Rating</h3>
+                            <p class="txt">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
                             </p>
                         </div>
@@ -140,46 +183,53 @@
               </div>
         </section>
         <section class="section ourFood">
-            <img id="donut" src="./img/donut_icon.svg" alt="donut icon">
-            <h1 class="title ourFood__title">Menu</h1>
-            <h2 class="subtitle ourFood__subtitle">Our Foods Menu</h2>
-            <div class="swiper ourFoodSwiper">
+            <h1 class="title">Menu</h1>
+            <h2 class="subtitle subtitle--margin-right">Our Foods Menu</h2>
+            <div class="swiper our-food-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="ourFood__descrip">
-                        <div class="ourFood__descrip_item">
-                            <div class="imgBox">
-                                <img src="./img/imgRelleno.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="ourFood__descrip">
+                            <div class="ourFood__descrip_item">
+                                <div class="ourFood__descrip_item-box">
+                                    <div class="imgBox">
+                                        <img src="/img/imgRelleno.png" alt="">
+                                    </div>
+                                    <div class="plate">
+                                        <h3 class="subtitle subtitle__rooms-description-title">Eggs & Bacon</h3>
+                                        <p class="txt--roboto">
+                                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="plates">
-                                <h3 class="plates__title">Eggs & Bacon</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                                </p>
+                            <div class="ourFood__descrip_item">
+                                <div class="ourFood__descrip_item-box">
+                                    <div class="imgBox">
+                                        <img src="/img/imgRelleno.png" alt="">
+                                    </div>
+                                    <div class="plate">
+                                        <h3 class="subtitle subtitle__rooms-description-title">Tea or Coffee</h3>
+                                        <p class="txt--roboto">
+                                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ourFood__descrip_item">
+                                <div class="ourFood__descrip_item-box">
+                                    <div class="imgBox">
+                                        <img src="/img/imgRelleno.png" alt="">
+                                    </div>
+                                    <div class="plate">
+                                        <h3 class="subtitle subtitle__rooms-description-title">Chia Oatmeal</h3>
+                                        <p class="txt--roboto">
+                                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="ourFood__descrip_item">
-                            <div class="imgBox">
-                                <img src="./img/imgRelleno.png" alt="">
-                            </div>
-                            <div class="plates">
-                                <h3 class="plates__title">Tea or Coffee</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ourFood__descrip_item">
-                            <div class="imgBox">
-                                <img src="./img/imgRelleno.png" alt="">
-                            </div>
-                            <div class="plates">
-                                <h3 class="plates__title">Chia Oatmeal</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                    </div></div>
+                    </div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
                     <div class="swiper-slide">Slide 4</div>
@@ -189,17 +239,17 @@
                     <div class="swiper-slide">Slide 8</div>
                     <div class="swiper-slide">Slide 9</div>
                 </div>
-                <div class="swiper-button-next swiper-button-next--position"></div>
-                <div class="swiper-button-prev swiper-button-prev--position"></div>
+                <div class="swiper-button-next swiper-button-next--custom-position our-food-swiper-next"></div>
+                <div class="swiper-button-prev swiper-button-prev--custom-position our-food-swiper-prev"></div>
             </div>
         </section>
-        <div class="swiper mySwiper">
+        <div class="swiper index-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="imagen" src="./img/imgRelleno.png" alt=""></div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide"><img id="imagen" src="/img/imgRelleno.png" alt=""></div>
+                <div class="swiper-slide"><img id="imagen" src="/img/imgRelleno.png" alt=""></div>
+                <div class="swiper-slide"><img id="imagen" src="/img/imgRelleno.png" alt=""></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination index-swiper-pagination"></div>
         </div>
         <section class="section data">
             <div class="data__item">

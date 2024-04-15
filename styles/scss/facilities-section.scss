@@ -1,0 +1,17 @@
+@use 'sass:math';
+@import 'var.scss';
+
+.facilities {
+    padding: $padding;
+    text-align: center;
+
+    &__descrip {
+        text-align: left;
+        padding-left: $padding;
+        margin-right: $margin*3;
+
+        img {
+            margin-bottom: $marginBottom;
+        }
+    }
+}

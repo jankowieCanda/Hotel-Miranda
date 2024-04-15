@@ -2,7 +2,7 @@
 
 .title {
     font-family: $archivoFont;
-    font-size: 0.813rem;/* 13px */
+    font-size: 0.875rem;/* 14px */
     font-weight: 700;
     margin-bottom: $marginBottom;
     letter-spacing: 0.175em;/* 2.8px */
@@ -14,14 +14,14 @@
     }
     &-founder {
         font-size: 0.875rem;
-        color: $colorIntroVideo;
+        color: $colorFounder;
     }
 }
 .subtitle {
     font-family: $oldStandardFont;
     font-size: 3.5rem;/* 56px */
     font-weight: 400;
-    letter-spacing: -0.075em;
+    letter-spacing: -0.075em;/* 1.2px */
     margin-bottom: $marginBottom;
     color: $colorBlack2;
 
@@ -30,6 +30,7 @@
     }
     &--font-size {
         font-size: 1.875rem;/* 30px */
+        letter-spacing: -0.056;/* 0.9px */
     }
     &--font-size-xl {
         font-size: 3.75rem;/* 60px */
@@ -40,7 +41,7 @@
     }
     &__rooms-description-title {
         font-size: 1.5rem;/* 24px */
-        letter-spacing: -0.045em;
+        letter-spacing: -0.045em;/* 0.72px */
     } 
 }
 .txt {
